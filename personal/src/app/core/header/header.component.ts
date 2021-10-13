@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
   }
 
   routingToArticles() {
-    this.router.navigateByUrl('/');
+    this.router.navigateByUrl('/articles');
   }
 
   routingToContact() {
