@@ -13,4 +13,5 @@ ng serve
 ng generate module contact
 ng generate component contact --path=src/app/contact --module=contact --export --flat
 ng serve
+ng generate module articles --route=articles --module=app-routing
 ```
