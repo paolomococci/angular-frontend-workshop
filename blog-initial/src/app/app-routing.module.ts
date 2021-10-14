@@ -1,3 +1,4 @@
+import { ArticlesComponent } from './articles/articles.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -9,8 +10,12 @@ const routes: Routes = [
     path: 'articles',
     loadChildren: () => import('./articles/articles.module').then(m => m.ArticlesModule)
    },
-  { path: '', redirectTo: '/contact', pathMatch: 'full' },
-  { path: '**', component: ContactComponent },
+  {
+    path: 'posts',
+    loadChildren: () => import('./posts/posts.module').then(m => m.PostsModule)
+   },
+  { path: '', redirectTo: '/articles', pathMatch: 'full' },
+  { path: '**', component: ArticlesComponent },
 ];
 
 @NgModule({
