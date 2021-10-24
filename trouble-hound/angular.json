@@ -27,7 +27,10 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "node_modules/@clr/ui/clr-ui.min.css",
+=======
+>>>>>>> ced8ff93951770401a88af11f4905a158ea25fc7
               "src/styles.css"
             ],
             "scripts": []
@@ -104,4 +107,8 @@
     }
   },
   "defaultProject": "trouble-hound"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ced8ff93951770401a88af11f4905a158ea25fc7
