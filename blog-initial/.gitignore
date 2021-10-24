@@ -39,6 +39,9 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+.scully/
+scully/
+scully.log
 
 # System Files
 .DS_Store
