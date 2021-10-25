@@ -11,3 +11,10 @@ ng new trouble-hound --defaults
 ```text
 ng add @clr/angular
 ```
+
+## fetching pending troubles
+
+```text
+ng generate service troubles
+ng generate interface trouble
+```
