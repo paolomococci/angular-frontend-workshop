@@ -18,3 +18,9 @@ ng add @clr/angular
 ng generate service troubles
 ng generate interface trouble
 ```
+
+## visualizing troubles in a data grid
+
+```text
+ng generate component trouble-data-grid
+```
