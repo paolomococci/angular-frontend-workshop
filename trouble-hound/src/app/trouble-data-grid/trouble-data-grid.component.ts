@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TroublesService } from '../troubles.service';
+import { Trouble } from '../trouble';
 
 @Component({
   selector: 'app-trouble-data-grid',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TroubleDataGridComponent implements OnInit {
 
-  constructor() { }
+  troubles: Trouble[] = [];
+
+  constructor(private troubleService: TroublesService) { }
 
   ngOnInit(): void {
+    this.getTroubles();
+  }
+
+  private getTroubles() {
+    this.troubles = this.troubleService.getPendingTroubles();
   }
 
 }
