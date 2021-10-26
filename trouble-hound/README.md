@@ -30,3 +30,9 @@ ng generate component trouble-data-grid
 ```text
 ng generate component trouble-report
 ```
+
+## I added the confirm dialog component
+
+```text
+ng generate component confirm-dialog
+```
