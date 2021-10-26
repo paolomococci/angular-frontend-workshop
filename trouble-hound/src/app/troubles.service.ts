@@ -18,4 +18,15 @@ export class TroublesService {
     trouble.troubleOrderNumber = this.troubles.length + 1;
     this.troubles.push(trouble);
   }
+
+  closeTrouble(trouble: Trouble) {
+    const selectedTrouble: Trouble = {
+      ...trouble,
+      closure: new Date();
+    };
+
+    const index = this.troubles.findIndex(i => i === trouble);
+    this.troubles[index] = selectedTrouble;
+  }
+
 }

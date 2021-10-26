@@ -10,6 +10,7 @@ import { Trouble } from '../trouble';
 export class TroubleDataGridComponent implements OnInit {
 
   troubles: Trouble[] = [];
+  selectedTrouble: Trouble | null = null;
   showReportTrouble = false;
 
   constructor(private troubleService: TroublesService) { }
@@ -21,6 +22,14 @@ export class TroubleDataGridComponent implements OnInit {
   onCloseReport() {
     this.showReportTrouble = false;
     this.getTroubles();
+  }
+
+  onConfirm(confirmed: boolean) {
+    if (confirm && this.selectedTrouble) {
+      this.troubleService.closeTrouble(this.selectedTrouble);
+      this.getTroubles();
+    }
+    this.selectedTrouble = null;
   }
 
   private getTroubles() {

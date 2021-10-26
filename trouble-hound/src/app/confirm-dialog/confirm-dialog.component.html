@@ -1,1 +1,10 @@
-<p>confirm-dialog works!</p>
+<clr-modal [clrModalOpen]="troubleOrderNumber !== null" [clrModalClosable]="false">
+    <h3 class="modal-title">trouble number {{troubleOrderNumber}}</h3>
+    <div class="modal-body">
+        <p>are you sure this trouble is solved</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" (click)="toConfirm()">Yes</button>
+        <button type="button" class="btn btn-outline" (click)="toDisconfirm()">No</button>
+    </div>
+</clr-modal>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-confirm-dialog',
@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConfirmDialogComponent implements OnInit {
 
+  @Input() troubleOrderNumber: number | null = null;
+
+  @Output() confirm = new EventEmitter<boolean>();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toConfirm() {
+    this.confirm.emit(true);
+    this.troubleOrderNumber = null;
+  }
+
+  toDisconfirm() {
+    this.confirm.emit(false);
+    this.troubleOrderNumber = null;
   }
 
 }

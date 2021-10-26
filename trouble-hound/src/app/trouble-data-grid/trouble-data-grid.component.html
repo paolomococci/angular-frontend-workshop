@@ -23,6 +23,9 @@
       Closure
     </clr-dg-column>
     <clr-dg-row *clrDgItems="let trouble of troubles">
+      <clr-dg-action-overflow>
+        <button class="action-item" (click)="selectedTrouble = trouble">close</button>
+      </clr-dg-action-overflow>
       <clr-dg-cell>{{trouble.troubleOrderNumber}}</clr-dg-cell>
       <clr-dg-cell>{{trouble.title}}</clr-dg-cell>
       <clr-dg-cell>{{trouble.description}}</clr-dg-cell>
@@ -35,3 +38,4 @@
   </clr-datagrid>
 </ng-container>
 <app-trouble-report *ngIf="showReportTrouble == true" (formClose)="onCloseReport()"></app-trouble-report>
+<app-confirm-dialog *ngIf="selectedTrouble" [troubleOrderNumber]="selectedtrouble.troubleOrderNumber" (toConfirm)="onConfirm($event)"></app-confirm-dialog>
