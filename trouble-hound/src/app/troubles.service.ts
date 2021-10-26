@@ -13,4 +13,9 @@ export class TroublesService {
   getPendingTroubles() : Trouble[] {
     return this.troubles.filter(trouble => !trouble.closure);
   }
+
+  createPendingTrouble(trouble: Trouble) {
+    trouble.troubleOrderNumber = this.troubles.length + 1;
+    this.troubles.push(trouble);
+  }
 }
