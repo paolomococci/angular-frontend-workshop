@@ -10,10 +10,16 @@ import { Trouble } from '../trouble';
 export class TroubleDataGridComponent implements OnInit {
 
   troubles: Trouble[] = [];
+  showReportTrouble = false;
 
   constructor(private troubleService: TroublesService) { }
 
   ngOnInit(): void {
+    this.getTroubles();
+  }
+
+  onCloseReport() {
+    this.showReportTrouble = false;
     this.getTroubles();
   }
 

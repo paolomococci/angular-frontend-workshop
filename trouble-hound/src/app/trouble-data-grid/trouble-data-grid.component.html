@@ -1,33 +1,37 @@
-<clr-datagrid>
-  <clr-dg-column [clrDgField]="'troubleOrderNumber'" [clrDgColType]="'number'">
-    Trouble Number
-  </clr-dg-column>
-  <clr-dg-column [clrDgField]="'title'">
-    Title
-  </clr-dg-column>
-  <clr-dg-column [clrDgField]="'description'">
-    Description
-  </clr-dg-column>
-  <clr-dg-column [clrDgField]="'priority'">
-    Priority
-  </clr-dg-column>
-  <clr-dg-column [clrDgField]="'type'">
-    Type
-  </clr-dg-column>
-  <clr-dg-column [clrDgField]="'opening'">
-    Opening
-  </clr-dg-column>
-  <clr-dg-column [clrDgField]="'closure'">
-    Closure
-  </clr-dg-column>
-  <clr-dg-row *clrDgItems="let trouble of troubles">
-    <clr-dg-cell>{{trouble.troubleOrderNumber}}</clr-dg-cell>
-    <clr-dg-cell>{{trouble.title}}</clr-dg-cell>
-    <clr-dg-cell>{{trouble.description}}</clr-dg-cell>
-    <clr-dg-cell>{{trouble.priority}}</clr-dg-cell>
-    <clr-dg-cell>{{trouble.type}}</clr-dg-cell>
-    <clr-dg-cell>{{trouble.opening}}</clr-dg-cell>
-    <clr-dg-cell>{{trouble.closure}}</clr-dg-cell>
-  </clr-dg-row>
-  <clr-dg-footer>{{troubles.length}} troubles</clr-dg-footer>
-</clr-datagrid>
+<ng-container *ngIf="showReportTrouble === false">
+  <button class="btn btn-primary" (click)="showReportTrouble = true">add new pending trouble</button>
+  <clr-datagrid>
+    <clr-dg-column [clrDgField]="'troubleOrderNumber'" [clrDgColType]="'number'">
+      Trouble Number
+    </clr-dg-column>
+    <clr-dg-column [clrDgField]="'title'">
+      Title
+    </clr-dg-column>
+    <clr-dg-column [clrDgField]="'description'">
+      Description
+    </clr-dg-column>
+    <clr-dg-column [clrDgField]="'priority'">
+      Priority
+    </clr-dg-column>
+    <clr-dg-column [clrDgField]="'type'">
+      Type
+    </clr-dg-column>
+    <clr-dg-column [clrDgField]="'opening'">
+      Opening
+    </clr-dg-column>
+    <clr-dg-column [clrDgField]="'closure'">
+      Closure
+    </clr-dg-column>
+    <clr-dg-row *clrDgItems="let trouble of troubles">
+      <clr-dg-cell>{{trouble.troubleOrderNumber}}</clr-dg-cell>
+      <clr-dg-cell>{{trouble.title}}</clr-dg-cell>
+      <clr-dg-cell>{{trouble.description}}</clr-dg-cell>
+      <clr-dg-cell>{{trouble.priority}}</clr-dg-cell>
+      <clr-dg-cell>{{trouble.type}}</clr-dg-cell>
+      <clr-dg-cell>{{trouble.opening}}</clr-dg-cell>
+      <clr-dg-cell>{{trouble.closure}}</clr-dg-cell>
+    </clr-dg-row>
+    <clr-dg-footer>{{troubles.length}} troubles</clr-dg-footer>
+  </clr-datagrid>
+</ng-container>
+<app-trouble-report *ngIf="showReportTrouble == true" (formClose)="onCloseReport()"></app-trouble-report>

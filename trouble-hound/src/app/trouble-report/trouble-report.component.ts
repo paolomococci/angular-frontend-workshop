@@ -1,5 +1,5 @@
 import { TroublesService } from './../troubles.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class TroubleReportComponent implements OnInit {
 
+  @Output() formClose = new EventEmitter();
   troubleFormGroup: FormGroup | undefined;
 
   constructor(
@@ -27,5 +28,6 @@ export class TroubleReportComponent implements OnInit {
 
   createNewPendingTrouble() {
     this.troublesService.createPendingTrouble(this.troubleFormGroup?.value);
+    this.formClose.emit();
   }
 }
