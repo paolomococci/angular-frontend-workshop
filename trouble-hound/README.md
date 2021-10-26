@@ -24,3 +24,9 @@ ng generate interface trouble
 ```text
 ng generate component trouble-data-grid
 ```
+
+## I added the trouble reporting component
+
+```text
+ng generate component trouble-report
+```
