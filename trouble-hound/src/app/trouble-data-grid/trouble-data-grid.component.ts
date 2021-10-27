@@ -25,7 +25,7 @@ export class TroubleDataGridComponent implements OnInit {
   }
 
   onConfirm(confirmed: boolean) {
-    if (confirm && this.selectedTrouble) {
+    if (confirmed && this.selectedTrouble) {
       this.troubleService.closeTrouble(this.selectedTrouble);
       this.getTroubles();
     }

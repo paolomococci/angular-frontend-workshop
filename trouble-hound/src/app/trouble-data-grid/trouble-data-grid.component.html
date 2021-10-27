@@ -38,4 +38,4 @@
   </clr-datagrid>
 </ng-container>
 <app-trouble-report *ngIf="showReportTrouble == true" (formClose)="onCloseReport()"></app-trouble-report>
-<app-confirm-dialog *ngIf="selectedTrouble" [troubleOrderNumber]="selectedTrouble.troubleOrderNumber" (toConfirm)="onConfirm($event)"></app-confirm-dialog>
+<app-confirm-dialog *ngIf="selectedTrouble" [troubleOrderNumber]="selectedTrouble.troubleOrderNumber" (confirm)="onConfirm($event)"></app-confirm-dialog>
