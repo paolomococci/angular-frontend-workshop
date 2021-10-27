@@ -22,7 +22,7 @@ export class TroublesService {
   closeTrouble(trouble: Trouble) {
     const selectedTrouble: Trouble = {
       ...trouble,
-      closure: new Date();
+      closure: new Date()
     };
 
     const index = this.troubles.findIndex(i => i === trouble);
