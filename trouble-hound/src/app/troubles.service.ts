@@ -29,4 +29,13 @@ export class TroublesService {
     this.troubles[index] = selectedTrouble;
   }
 
+  getTips(title: string) : Trouble[] {
+    if (title.length > 3) {
+      return this.troubles.filter(
+        trouble => trouble.title.indexOf(title) !== -1
+      );
+    }
+    return [];
+  }
+
 }

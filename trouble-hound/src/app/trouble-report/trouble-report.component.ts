@@ -1,6 +1,7 @@
 import { TroublesService } from './../troubles.service';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Trouble } from '../trouble';
 
 @Component({
   selector: 'app-trouble-report',
@@ -11,6 +12,7 @@ export class TroubleReportComponent implements OnInit {
 
   @Output() formClose = new EventEmitter();
   troubleFormGroup: FormGroup | undefined;
+  tips: Trouble[] = [];
 
   constructor(
     private formBuilder: FormBuilder,
@@ -25,6 +27,11 @@ export class TroubleReportComponent implements OnInit {
       type: ['', Validators.required],
       opening: new Date
     });
+    this.troubleFormGroup.controls.title.valueChanges.subscribe(
+      (title: string) => {
+        this.tips = this.troublesService.getTips(title);
+      }
+    );
   }
 
   createNewPendingTrouble() {
