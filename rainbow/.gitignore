@@ -51,3 +51,6 @@ assets/
 package-lock.json
 .vscode/
 HELP.md
+.editorconfig
+.editorconfig
+.browserslistrc
