@@ -13,4 +13,5 @@ npm i --legacy-peer-deps ngx-wig
 npm i --legacy-peer-deps --save-dev electron
 npm i --legacy-peer-deps --save-dev webpack-cli
 npm i --legacy-peer-deps --save-dev ts-loader
+npm i --legacy-peer-deps --save-dev concurrently
 ```
