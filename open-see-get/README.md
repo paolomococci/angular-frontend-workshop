@@ -10,4 +10,5 @@ ng new open-see-get --defaults
 
 ```shell
 npm i --legacy-peer-deps ngx-wig
+npm i --legacy-peer-deps --save-dev electron
 ```
