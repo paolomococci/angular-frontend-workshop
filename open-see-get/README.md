@@ -27,3 +27,5 @@ I add editor service
 ```shell
 ng g s services/editor
 ```
+
+![open-see-get web app screenshot](https://github.com/paolomococci/angular-frontend-workshop/blob/main/screenshots/OpenSeeGet-11-07-2022.png)
