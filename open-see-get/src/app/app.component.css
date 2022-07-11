@@ -3,3 +3,10 @@ html, body {
   width: 1em;
   height: 1em;
 }
+
+.ng-wig, nw-editor-container, nw-editor {
+  display: flex !important;
+  flex-direction: column;
+  height: 1em !important;
+  overflow: hidden;
+}
