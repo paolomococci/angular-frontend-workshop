@@ -21,3 +21,9 @@ I add editor component
 ```shell
 ng g c components/editor
 ```
+
+I add editor service
+
+```shell
+ng g s services/editor
+```
