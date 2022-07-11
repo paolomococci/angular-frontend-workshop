@@ -15,3 +15,9 @@ npm i --legacy-peer-deps --save-dev webpack-cli
 npm i --legacy-peer-deps --save-dev ts-loader
 npm i --legacy-peer-deps --save-dev concurrently
 ```
+
+I add editor component
+
+```shell
+ng g c components/editors
+```
