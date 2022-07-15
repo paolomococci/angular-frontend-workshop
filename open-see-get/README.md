@@ -16,6 +16,12 @@ npm i --legacy-peer-deps --save-dev ts-loader
 npm i --legacy-peer-deps --save-dev concurrently
 ```
 
+or, if you already have a suitably updated x file:
+
+```shell
+npm install --legacy-peer-deps
+```
+
 I add editor component
 
 ```shell
