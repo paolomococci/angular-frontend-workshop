@@ -3,17 +3,17 @@ import {
   BrowserWindow
  } from "electron";
 
- function createWindow(): void {
+function createWindow(): void {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600
   })
 
   mainWindow.loadFile('index.html')
- }
+}
 
- app.whenReady().then(
+app.whenReady().then(
   () => {
     createWindow()
   }
- )
+)
