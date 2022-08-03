@@ -9,17 +9,17 @@ ng new open-see-get --defaults
 ## now I install the following packages
 
 ```shell
-npm i --legacy-peer-deps ngx-wig
-npm i --legacy-peer-deps --save-dev electron
-npm i --legacy-peer-deps --save-dev webpack-cli
-npm i --legacy-peer-deps --save-dev ts-loader
-npm i --legacy-peer-deps --save-dev concurrently
+npm i ngx-wig
+npm i --save-dev electron
+npm i --save-dev webpack-cli
+npm i --save-dev ts-loader
+npm i --save-dev concurrently
 ```
 
 or, if you already have a suitably updated x file:
 
 ```shell
-npm install --legacy-peer-deps
+npm install
 ```
 
 I add editor component
