@@ -45,3 +45,9 @@ npm run start:desktop
 ```shell
 npm i --save-dev @types/node@15.6.0
 ```
+
+## now I proceed with the installation of package electron-packager
+
+```shell
+npm i --save-dev electron-packager
+```
