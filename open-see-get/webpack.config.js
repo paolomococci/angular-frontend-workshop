@@ -7,18 +7,10 @@ const src = path.join(
 
 module.exports = {
   entry: path.join(src, 'main.ts'),
-  output: {
-    path: path.join(
-      process.cwd(),
-      'dist',
-      'open-see-get'
-    ),
-    filename: 'shell.js'
-  },
   module: {
     rules: [
       {
-        test: /|.ts$/,
+        test: /\.ts$/,
         loader: 'ts-loader',
         options: {
           configFile: path.join(
