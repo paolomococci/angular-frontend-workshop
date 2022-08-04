@@ -39,3 +39,9 @@ ng g s services/editor
 ```shell
 npm run start:desktop
 ```
+
+## now I check which versions of package @types/node are available and proceed with the installation of one of them
+
+```shell
+npm i --save-dev @types/node@15.6.0
+```
