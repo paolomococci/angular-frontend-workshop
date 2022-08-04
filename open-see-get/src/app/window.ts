@@ -8,3 +8,7 @@ export const WINDOW = new InjectionToken<Window>(
     factory: () => window
   }
 )
+
+export interface ElectronWindow extends Window {
+  require(module: string): any
+}
