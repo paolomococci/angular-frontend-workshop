@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "start:desktop": "concurrently \"ng build --delete-output-path=false --watch\" \"webpack --config webpack.dev.config.js --watch\"",
-    "build:electron": "ng build && webpack --config webpack.prod.config.js"
+    "build:electron": "ng build && webpack --config webpack.prod.config.js",
+    "package": "electron-packager dist/open-see-get --out=dist --asar"
   },
   "private": true,
   "dependencies": {
