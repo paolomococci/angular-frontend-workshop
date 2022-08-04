@@ -14,5 +14,19 @@ module.exports = {
       'open-see-get'
     ),
     filename: 'shell.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /|.ts$/,
+        loader: 'ts-loader',
+        options: {
+          configFile: path.join(
+            src,
+            'tsconfig.json'
+          )
+        }
+      }
+    ]
   }
 };
