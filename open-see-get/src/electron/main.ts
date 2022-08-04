@@ -1,7 +1,7 @@
 import {
   app,
   BrowserWindow
- } from "electron";
+ } from "electron"
 
 function createWindow(): void {
   const mainWindow = new BrowserWindow({
