@@ -1,6 +1,7 @@
 import {
   app,
-  BrowserWindow
+  BrowserWindow,
+  ipcMain
 } from "electron"
 
 import * as fs from 'fs'
@@ -26,5 +27,16 @@ function createWindow(): void {
 app.whenReady().then(
   () => {
     createWindow()
+  }
+)
+
+ipcMain.handle(
+  'getContent',
+  () => {
+    if (fs.existsSync(contentFile)) {
+      const result = fs.readFileSync(contentFile)
+      return result.toString()
+    }
+    return ''
   }
 )
