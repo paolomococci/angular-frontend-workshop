@@ -40,3 +40,10 @@ ipcMain.handle(
     return ''
   }
 )
+
+ipcMain.handle(
+  'setContent',
+  ({}, content: string) => {
+    fs.writeFileSync(contentFile, content)
+  }
+)
