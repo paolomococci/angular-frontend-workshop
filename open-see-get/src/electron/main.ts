@@ -6,6 +6,10 @@ import {
 import * as fs from 'fs'
 import * as path from 'path'
 
+const contentFile = path.join(
+  app.getPath('userData'), 'content.html'
+)
+
 function createWindow(): void {
   const mainWindow = new BrowserWindow({
     width: 800,
