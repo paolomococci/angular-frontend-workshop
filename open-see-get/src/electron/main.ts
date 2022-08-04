@@ -1,7 +1,10 @@
 import {
   app,
   BrowserWindow
- } from "electron"
+} from "electron"
+
+import * as fs from 'fs'
+import * as path from 'path'
 
 function createWindow(): void {
   const mainWindow = new BrowserWindow({
