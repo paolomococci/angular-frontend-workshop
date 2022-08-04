@@ -51,3 +51,15 @@ npm i --save-dev @types/node@15.6.0
 ```shell
 npm i --save-dev electron-packager
 ```
+
+## finally, I proceed to build the application in production mode
+
+```shell
+npm run build:electron
+```
+
+## and then I generate the package
+
+```shell
+npm run package
+```
