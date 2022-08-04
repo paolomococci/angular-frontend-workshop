@@ -14,7 +14,9 @@ import {
 })
 export class EditorComponent implements OnInit {
 
-  constructor() { }
+  typedContent = ''
+
+  constructor(private editorService: EditorService) { }
 
   ngOnInit(): void {
   }
