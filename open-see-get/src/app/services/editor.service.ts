@@ -23,6 +23,11 @@ export class EditorService {
   }
 
   getContent(): Promise<string> {
-    return this.ipcRenderer.invoke('setContent')
+    return this.ipcRenderer.invoke('getContent')
   }
+
+  setContent(content: string): void {
+    this.ipcRenderer.invoke('setContent', content)
+  }
+
 }
