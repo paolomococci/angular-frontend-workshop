@@ -16,5 +16,5 @@ import {
 })
 export class EditorService {
 
-  constructor() { }
+  constructor(@Inject(WINDOW) private window: ElectronWindow) { }
 }
