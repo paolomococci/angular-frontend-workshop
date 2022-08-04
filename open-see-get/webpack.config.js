@@ -1,9 +1,9 @@
-const path = require('path');
+const path = require('path')
 const src = path.join(
   process.cwd(),
   'src',
   'electron'
-);
+)
 
 module.exports = {
   entry: path.join(src, 'main.ts'),
@@ -22,4 +22,4 @@ module.exports = {
     ]
   },
   target: 'electron-main'
-};
+}
