@@ -21,4 +21,8 @@ export class EditorService {
   private get ipcRenderer(): Electron.IpcRenderer {
     return this.window.require('electron').ipcRenderer
   }
+
+  getContent(): Promise<string> {
+    return this.ipcRenderer.invoke('setContent')
+  }
 }
