@@ -19,6 +19,7 @@ export class EditorComponent implements OnInit {
   constructor(private editorService: EditorService) { }
 
   ngOnInit(): void {
+    this.getContent()
   }
 
   private async getContent() {
