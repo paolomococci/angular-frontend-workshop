@@ -3,6 +3,10 @@ import {
   OnInit
 } from '@angular/core'
 
+import {
+  EditorService
+} from './../../services/editor.service'
+
 @Component({
   selector: 'app-editor',
   templateUrl: './editor.component.html',
