@@ -33,3 +33,9 @@ I add editor service
 ```shell
 ng g s services/editor
 ```
+
+## and here's how to run this desktop application in development mode
+
+```shell
+npm run start:desktop
+```
