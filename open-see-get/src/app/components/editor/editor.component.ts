@@ -26,4 +26,8 @@ export class EditorComponent implements OnInit {
     this.typedContent = await this.editorService.getContent()
   }
 
+  saveContent(content: string): void {
+    this.editorService.setContent(content)
+  }
+
 }
