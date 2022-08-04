@@ -17,4 +17,8 @@ import {
 export class EditorService {
 
   constructor(@Inject(WINDOW) private window: ElectronWindow) { }
+
+  private get ipcRenderer(): Electron.IpcRenderer {
+    return this.window.require('electron').ipcRenderer
+  }
 }
