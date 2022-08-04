@@ -12,5 +12,21 @@ module.exports = {
       'open-see-get'
     ),
     filename: 'main.js'
-  }
+  },
+  plugins: [
+    new CopyWebpackPlugin(
+      {
+        patterns: [
+          {
+            context: path.join(
+              process.cwd(),
+              'src',
+              'electron'
+            ),
+            from: 'package.json'
+          }
+        ]
+      }
+    )
+  ]
 }
