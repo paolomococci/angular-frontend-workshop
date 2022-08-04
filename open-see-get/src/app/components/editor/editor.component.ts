@@ -21,4 +21,8 @@ export class EditorComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  private async getContent() {
+    this.typedContent = await this.editorService.getContent()
+  }
+
 }
