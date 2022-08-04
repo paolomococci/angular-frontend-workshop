@@ -1,3 +1,5 @@
 <ngx-wig
-  placeholder="unleash your imagination and transpose it into a work of art">
+  placeholder="unleash your imagination and transpose it into a work of art"
+  [ngModel]="typedContent"
+  (contentChange)="saveContent($event)">
 </ngx-wig>
