@@ -18,6 +18,12 @@ npm install
 ng g i models/Fruit --type=model
 ```
 
+## I add fruits component
+
+```shell
+ng g c components/fruits
+```
+
 ## serve
 
 ```shell
