@@ -12,6 +12,12 @@ ng n crud-app --routing --skip-install --style=sass
 npm install
 ```
 
+# I add Fruit interface
+
+```shell
+ng g i models/Fruit --type=model
+```
+
 ## serve
 
 ```shell
