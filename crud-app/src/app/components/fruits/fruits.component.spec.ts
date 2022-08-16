@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { FruitsComponent } from './fruits.component';
+import { FruitsComponent } from './fruits.component'
 
 describe('FruitsComponent', () => {
   let component: FruitsComponent;
@@ -10,14 +10,14 @@ describe('FruitsComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ FruitsComponent ]
     })
-    .compileComponents();
+    .compileComponents()
 
-    fixture = TestBed.createComponent(FruitsComponent);
+    fixture = TestBed.createComponent(FruitsComponent)
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    fixture.detectChanges()
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})
