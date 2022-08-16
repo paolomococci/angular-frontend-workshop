@@ -2,6 +2,9 @@ import {
   Component,
   OnInit
 } from '@angular/core'
+
+import { FormsModule } from '@angular/forms'
+
 import { Fruit } from 'src/app/models/fruit.model'
 
 @Component({
