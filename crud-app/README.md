@@ -11,3 +11,9 @@ ng n crud-app --routing --skip-install --style=sass
 ```shell
 npm install
 ```
+
+## serve
+
+```shell
+ng serve -o
+```
