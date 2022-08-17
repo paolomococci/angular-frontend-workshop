@@ -19,7 +19,10 @@ export interface Fruit {
   vitaminC: number | null // % RDA
   vitaminD: number | null // % RDA
   vitaminE: number | null // % RDA
+  vitaminK: number | null // % RDA
   calcium: number | null // % RDA
-  potassium: number | null // % RDA
+  magnesium: number | null // % RDA
   manganese: number | null // % RDA
+  phosphorus: number | null // % RDA
+  potassium: number | null // % RDA
 }
