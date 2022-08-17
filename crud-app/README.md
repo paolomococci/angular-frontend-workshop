@@ -24,6 +24,12 @@ ng g i models/Fruit --type=model
 ng g c components/fruits
 ```
 
+## I add FruitsData class
+
+```shell
+ng g cl data/FruitsData
+```
+
 ## serve
 
 ```shell
