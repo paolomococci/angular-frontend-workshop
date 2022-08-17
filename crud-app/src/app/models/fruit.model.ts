@@ -27,4 +27,5 @@ export interface Fruit {
   manganese: number | null // % RDA
   phosphorus: number | null // % RDA
   potassium: number | null // % RDA
+  selenium: number | null // % RDA
 }
