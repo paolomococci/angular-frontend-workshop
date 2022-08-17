@@ -1,5 +1,7 @@
 import { Fruit } from "../models/fruit.model"
 
 export class FruitsData {
-  fruits: Fruit[] = []
+  fruits: Fruit[] = [
+    {id:1, name:'apple'}
+  ]
 }
