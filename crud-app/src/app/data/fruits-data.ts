@@ -1,9 +1,7 @@
 import { Fruit } from "../models/fruit.model"
 
 export class FruitsData {
-  fruits: Fruit[] = [
+  static fruits: Fruit[] = [
     {id:1, name:'apple'}
   ]
-
-  static fruits: Fruit[]
 }
