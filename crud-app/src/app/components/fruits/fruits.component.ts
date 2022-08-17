@@ -3,9 +3,9 @@ import {
   OnInit
 } from '@angular/core'
 
-import { FormsModule } from '@angular/forms'
-
 import { Fruit } from 'src/app/models/fruit.model'
+
+import { FruitsData } from 'src/app/data/fruits-data'
 
 @Component({
   selector: 'app-fruits',
@@ -14,7 +14,7 @@ import { Fruit } from 'src/app/models/fruit.model'
 })
 export class FruitsComponent implements OnInit {
 
-  fruit: Fruit = {id: 1, name: 'apple'}
+  fruit: Fruit = FruitsData.fruits[0]
 
   constructor() { }
 
