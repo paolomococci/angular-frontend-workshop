@@ -24,4 +24,6 @@ export class FruitsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSelect(fruit: Fruit): void {}
+
 }
