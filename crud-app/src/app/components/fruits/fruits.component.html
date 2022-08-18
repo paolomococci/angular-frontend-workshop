@@ -15,7 +15,13 @@
   </ul>
 </div>
 
-<div>
-  <label for="name">fruit name editor</label>
-  <input id="name" [(ngModel)]="fruit.name" placeholder="name">
+<div *ngIf="selectedFruit">
+  <h3>
+    {{selectedFruit.name | uppercase}}
+  </h3>
+  <div>
+    id: {{selectedFruit.id}}
+  </div>
+  <label for="name">fruit name field</label>
+  <input id="name" [(ngModel)]="selectedFruit.name" placeholder="name">
 </div>
