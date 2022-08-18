@@ -16,6 +16,9 @@ export class FruitsComponent implements OnInit {
 
   fruit: Fruit = FruitsData.fruits[0]
 
+  fruits: Fruit[] = FruitsData.fruits
+  selectedFruit?: Fruit
+
   constructor() { }
 
   ngOnInit(): void {
