@@ -1,9 +1,16 @@
 <h2>fruits</h2>
 
 <div>
-  <ul>
-    <li>
-      <!--todo-->
+  <ul class="fruits">
+    <li *ngFor="let fruit of fruits">
+      <button [class.selected]="fruit === selectedFruit" type="button" (click)="onSelect(fruit)">
+        <span class="badge">
+          {{fruit.id}}
+        </span>
+        <span class="name">
+          {{fruit.name}}
+        </span>
+      </button>
     </li>
   </ul>
 </div>
