@@ -1,14 +1,15 @@
-<div>
-  <h2>
-
-  </h2>
+<div *ngIf="fruit">
+  <h3>
+    {{fruit.name | uppercase}} details
+  </h3>
 
   <div>
-    <span></span>
+    <span>id: </span>
+    {{fruit.id}}
   </div>
 
   <div>
-    <label></label>
-    <input>
+    <label for="name">fruit name</label>
+    <input id="name" [(ngModel)]="fruit.name" placeholder="name">
   </div>
 </div>
