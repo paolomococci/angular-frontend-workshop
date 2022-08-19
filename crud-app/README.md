@@ -48,6 +48,12 @@ ng g c components/messages
 ng g s services/message
 ```
 
+## I add fruit service
+
+```shell
+ng g s services/fruit
+```
+
 ## serve
 
 ```shell
