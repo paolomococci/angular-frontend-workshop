@@ -36,6 +36,12 @@ ng g cl data/FruitsData
 ng g c components/fruit-details
 ```
 
+## I add messages component
+
+```shell
+ng g c components/messages
+```
+
 ## serve
 
 ```shell
