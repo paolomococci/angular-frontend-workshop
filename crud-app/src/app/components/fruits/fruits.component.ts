@@ -18,13 +18,23 @@ export class FruitsComponent implements OnInit {
   fruits: Fruit[] = []
   selectedFruit?: Fruit
 
-  constructor() { }
+  constructor(
+    private fruitService: FruitService,
+    private messageService: MessageService
+  ) { }
 
   ngOnInit(): void {
   }
 
   onSelect(fruit: Fruit): void {
     this.selectedFruit = fruit
+  }
+
+  getFruits(): void {
+    this.fruitService.getFruits()
+      .subscribe(
+        fruits => this.fruits = fruits
+      )
   }
 
 }
