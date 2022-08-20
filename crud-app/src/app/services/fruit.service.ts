@@ -17,7 +17,7 @@ export class FruitService {
 
   getFruits(): Observable<Fruit[]> {
     const fruits = of(FruitsData.fruits)
-    this.messageService.add('retrieved fruits')
+    this.messageService.add('retrieved the identifiers of the following fruits:')
     return fruits
   }
 }
