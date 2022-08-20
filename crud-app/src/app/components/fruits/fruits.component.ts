@@ -16,6 +16,7 @@ import { MessageService } from 'src/app/services/message.service'
 export class FruitsComponent implements OnInit {
 
   fruits: Fruit[] = []
+
   selectedFruit?: Fruit
 
   constructor(
@@ -24,10 +25,12 @@ export class FruitsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getFruits()
   }
 
   onSelect(fruit: Fruit): void {
     this.selectedFruit = fruit
+    this.messageService.add('selected fruit id=$(fruit.id)')
   }
 
   getFruits(): void {
