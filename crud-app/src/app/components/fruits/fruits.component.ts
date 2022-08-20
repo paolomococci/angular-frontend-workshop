@@ -4,8 +4,10 @@ import {
 } from '@angular/core'
 
 import { Fruit } from 'src/app/models/fruit.model'
-
 import { FruitsData } from 'src/app/data/fruits-data'
+
+import { FruitService } from 'src/app/services/fruit.service'
+import { MessageService } from 'src/app/services/message.service'
 
 @Component({
   selector: 'app-fruits',
