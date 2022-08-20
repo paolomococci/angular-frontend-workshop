@@ -14,4 +14,10 @@ import { MessageService } from './message.service'
 export class FruitService {
 
   constructor(private messageService: MessageService) { }
+
+  getFruits(): Observable<Fruit[]> {
+    const fruits = of(FruitsData.fruits)
+    this.messageService.add('retrieved fruits')
+    return fruits
+  }
 }
