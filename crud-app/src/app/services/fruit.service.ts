@@ -13,5 +13,5 @@ import { MessageService } from './message.service'
 })
 export class FruitService {
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 }
