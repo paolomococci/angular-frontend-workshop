@@ -30,7 +30,7 @@ export class FruitsComponent implements OnInit {
 
   onSelect(fruit: Fruit): void {
     this.selectedFruit = fruit
-    this.messageService.add('selected fruit id=$(fruit.id)')
+    this.messageService.add(`selected fruit id=${fruit.id}`)
   }
 
   getFruits(): void {
