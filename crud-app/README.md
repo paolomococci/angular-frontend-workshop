@@ -54,6 +54,12 @@ ng g s services/message
 ng g s services/fruit
 ```
 
+## I add dashboard component
+
+```shell
+ng g c components/dashboard
+```
+
 ## serve
 
 ```shell
