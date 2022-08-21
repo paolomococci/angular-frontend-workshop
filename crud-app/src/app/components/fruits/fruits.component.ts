@@ -6,7 +6,6 @@ import {
 import { Fruit } from 'src/app/models/fruit.model'
 
 import { FruitService } from 'src/app/services/fruit.service'
-import { MessageService } from 'src/app/services/message.service'
 
 @Component({
   selector: 'app-fruits',
@@ -20,17 +19,11 @@ export class FruitsComponent implements OnInit {
   selectedFruit?: Fruit
 
   constructor(
-    private fruitService: FruitService,
-    private messageService: MessageService
+    private fruitService: FruitService
   ) { }
 
   ngOnInit(): void {
     this.getFruits()
-  }
-
-  onSelect(fruit: Fruit): void {
-    this.selectedFruit = fruit
-    this.messageService.add(`selected fruit id=${fruit.id}`)
   }
 
   getFruits(): void {
