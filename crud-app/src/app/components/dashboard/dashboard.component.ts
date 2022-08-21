@@ -3,6 +3,9 @@ import {
   OnInit
 } from '@angular/core'
 
+import { Fruit } from 'src/app/models/fruit.model'
+import { FruitService } from 'src/app/services/fruit.service'
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
