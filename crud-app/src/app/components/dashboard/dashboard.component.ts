@@ -18,6 +18,7 @@ export class DashboardComponent implements OnInit {
   constructor(private fruitService: FruitService) { }
 
   ngOnInit(): void {
+    this.getFruits()
   }
 
   getFruits(): void {}
