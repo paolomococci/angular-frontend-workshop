@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit {
 
   fruits: Fruit[] = []
 
-  constructor() { }
+  constructor(private fruitService: FruitService) { }
 
   ngOnInit(): void {
   }
