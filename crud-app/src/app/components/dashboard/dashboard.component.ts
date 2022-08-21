@@ -13,6 +13,8 @@ import { FruitService } from 'src/app/services/fruit.service'
 })
 export class DashboardComponent implements OnInit {
 
+  fruits: Fruit[] = []
+
   constructor() { }
 
   ngOnInit(): void {
