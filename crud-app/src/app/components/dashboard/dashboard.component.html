@@ -1,7 +1,7 @@
 <div>
   <h3>fruits</h3>
   <div class="fruits-menu">
-    <a *ngFor="let fruit of fruits">
+    <a *ngFor="let fruit of fruits" routerLink="/detail/{{fruit.id}}">
       {{fruit.name}}
     </a>
   </div>
