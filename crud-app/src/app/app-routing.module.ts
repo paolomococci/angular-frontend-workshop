@@ -16,12 +16,12 @@ const routes: Routes = [
     component: DashboardComponent
   },
   {
-    path: 'fruits',
-    component: FruitsComponent
-  },
-  {
     path: 'detail/:id',
     component: FruitDetailsComponent
+  },
+  {
+    path: 'fruits',
+    component: FruitsComponent
   },
   {
     path: '**',
