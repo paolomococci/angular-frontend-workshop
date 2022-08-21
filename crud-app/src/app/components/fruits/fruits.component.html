@@ -3,14 +3,11 @@
 <div>
   <ul class="fruits">
     <li *ngFor="let fruit of fruits">
-      <button [class.selected]="fruit === selectedFruit" type="button" (click)="onSelect(fruit)">
+      <a routerLink="/detail/{{fruit.id}}"></a>
         <span class="badge">
           {{fruit.id}}
         </span>
-        <span class="name">
           {{fruit.name}}
-        </span>
-      </button>
     </li>
   </ul>
 </div>
