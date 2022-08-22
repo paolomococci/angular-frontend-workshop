@@ -18,10 +18,11 @@ export class FruitService {
   getFruit(id: number): Observable<Fruit> {
     const fruit = FruitsData.fruits.find(
       temp => temp.id === id
-    )
+    )!
     this.messageService.add(
       `retrieved fruit id: ${id}`
     )
+    return of(fruit)
   }
 
   getFruits(): Observable<Fruit[]> {
