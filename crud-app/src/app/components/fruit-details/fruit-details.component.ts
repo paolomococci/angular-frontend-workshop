@@ -27,7 +27,11 @@ export class FruitDetailsComponent implements OnInit {
     this.getFruit()
   }
 
-  getFruit() {
+  getFruit(): void {
+    throw new Error('Method not implemented.')
+  }
+
+  goBack(): void {
     throw new Error('Method not implemented.')
   }
 
