@@ -28,7 +28,9 @@ export class FruitDetailsComponent implements OnInit {
   }
 
   getFruit(): void {
-    throw new Error('Method not implemented.')
+    const id = Number(
+      this.activateRoute.snapshot.paramMap.get('id')
+    )
   }
 
   goBack(): void {
