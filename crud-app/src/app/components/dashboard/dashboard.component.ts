@@ -23,7 +23,7 @@ export class DashboardComponent implements OnInit {
 
   getFruits(): void {
     this.fruitService.getFruits().subscribe(
-      fruits => this.fruits = fruits.slice(1, 5)
+      fruits => this.fruits = fruits
     )
   }
 
