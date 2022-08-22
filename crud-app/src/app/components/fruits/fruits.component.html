@@ -1,13 +1,13 @@
-<h2>fruits</h2>
+<h3>fruit list</h3>
 
 <div>
   <ul class="fruits">
     <li *ngFor="let fruit of fruits">
-      <a routerLink="/detail/{{fruit.id}}"></a>
+      <a routerLink="/detail/{{fruit.id}}">
         <span class="badge">
           {{fruit.id}}
         </span>
-          {{fruit.name}}
+          {{fruit.name}}</a>
     </li>
   </ul>
 </div>
