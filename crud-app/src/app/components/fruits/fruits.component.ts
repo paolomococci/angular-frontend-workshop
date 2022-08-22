@@ -4,7 +4,6 @@ import {
 } from '@angular/core'
 
 import { Fruit } from 'src/app/models/fruit.model'
-
 import { FruitService } from 'src/app/services/fruit.service'
 
 @Component({
@@ -15,8 +14,6 @@ import { FruitService } from 'src/app/services/fruit.service'
 export class FruitsComponent implements OnInit {
 
   fruits: Fruit[] = []
-
-  selectedFruit?: Fruit
 
   constructor(
     private fruitService: FruitService
