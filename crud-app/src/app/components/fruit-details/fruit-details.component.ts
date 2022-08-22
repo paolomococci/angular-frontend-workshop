@@ -19,7 +19,8 @@ export class FruitDetailsComponent implements OnInit {
 
   constructor(
     private activateRoute: ActivatedRoute,
-    private fruitService: FruitService
+    private fruitService: FruitService,
+    private location: Location
   ) { }
 
   ngOnInit(): void {
