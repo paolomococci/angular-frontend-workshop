@@ -15,7 +15,9 @@ export class FruitService {
 
   constructor(private messageService: MessageService) { }
 
-  getFruit():void {}
+  getFruit(id: number): Observable<Fruit> {
+
+  }
 
   getFruits(): Observable<Fruit[]> {
     const fruits = of(FruitsData.fruits)
