@@ -1,0 +1,55 @@
+
+.fruits
+  margin: 0 0 2em 0
+  list-style-type: none
+  padding: 0
+  width: 15em
+
+.fruits li
+  display: flex
+
+.fruits button
+  flex: 1
+  cursor: pointer
+  position: relative
+  left: 0
+  background-color: #eee
+  margin: .5em
+  padding: 0
+  border-radius: 4px
+  display: flex
+  align-items: stretch
+  height: 1.8em
+
+.fruits button:hover
+  color: #234
+  background-color: #eee
+  left: 0.3em
+  height: 1.8em
+  width: 1.8em
+
+.fruits button:active
+  background-color: #555
+  color: #fff
+
+.fruits button.selected
+  background-color: #000
+  color: #fff
+
+.fruits button.selected:hover
+  background-color: #555
+  color: #fff
+
+.fruits button.selected:active
+  background-color: #000
+  color: #fff
+
+.fruits .badge
+  display: inline-block
+  font-size: small
+  color: #fff
+  padding: 0.8em 0.7em 0 0.7em
+  background-color: #456
+  line-height: 1em
+  margin-right: 0.8em
+  border-radius: 4px 0 0 4px
