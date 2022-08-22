@@ -32,7 +32,7 @@ export class FruitDetailsComponent implements OnInit {
   }
 
   goBack(): void {
-    throw new Error('Method not implemented.')
+    this.location.back()
   }
 
 }
