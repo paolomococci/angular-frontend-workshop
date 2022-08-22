@@ -24,6 +24,11 @@ export class FruitDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getFruit()
+  }
+
+  getFruit() {
+    throw new Error('Method not implemented.')
   }
 
 }
