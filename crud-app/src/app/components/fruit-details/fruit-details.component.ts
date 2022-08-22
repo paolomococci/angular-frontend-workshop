@@ -1,7 +1,6 @@
 import {
   Component,
-  OnInit,
-  Input
+  OnInit
 } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
 import { Location } from '@angular/common'
@@ -16,10 +15,12 @@ import { FruitService } from 'src/app/services/fruit.service'
 })
 export class FruitDetailsComponent implements OnInit {
 
-  @Input()
-  fruit?: Fruit
+  fruit: Fruit | undefined
 
-  constructor() { }
+  constructor(
+    private activateRoute: ActivatedRoute,
+    private fruitService: FruitService
+  ) { }
 
   ngOnInit(): void {
   }
