@@ -16,7 +16,12 @@ export class FruitService {
   constructor(private messageService: MessageService) { }
 
   getFruit(id: number): Observable<Fruit> {
-
+    const fruit = FruitsData.fruits.find(
+      temp => temp.id === id
+    )
+    this.messageService.add(
+      `retrieved fruit id: ${id}`
+    )
   }
 
   getFruits(): Observable<Fruit[]> {
