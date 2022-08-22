@@ -31,6 +31,9 @@ export class FruitDetailsComponent implements OnInit {
     const id = Number(
       this.activateRoute.snapshot.paramMap.get('id')
     )
+    this.fruitService.getFruit(id).subscribe(
+      fruit => this.fruit = fruit
+    )
   }
 
   goBack(): void {
