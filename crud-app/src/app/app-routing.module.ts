@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core'
-import { RouterModule, Routes } from '@angular/router'
+
+import {
+  RouterModule,
+  Routes
+} from '@angular/router'
 
 import { FruitsComponent } from './components/fruits/fruits.component'
 import { DashboardComponent } from './components/dashboard/dashboard.component'
