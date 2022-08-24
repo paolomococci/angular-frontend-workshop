@@ -63,6 +63,8 @@ export class FruitService {
     return fruits
   }
 
+  getFruitById(): void {}
+
   getFruitsThanksToHttpClient(): Observable<Fruit[]> {
     return this.httpClient
       .get<Fruit[]>(
