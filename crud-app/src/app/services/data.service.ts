@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core'
 import { InMemoryDbService, RequestInfo } from 'angular-in-memory-web-api'
-import { Observable } from 'rxjs'
 
+import { Fruit } from 'src/app/models/fruit.model'
 import { FruitsData } from '../data/fruits-data'
 
 @Injectable({
@@ -9,10 +9,12 @@ import { FruitsData } from '../data/fruits-data'
 })
 export class DataService implements InMemoryDbService {
 
+  fruits: Fruit[] = FruitsData.fruits
+
   constructor() { }
 
-  createDb(): {} | Observable<{}> | Promise<{}> {
-    throw new Error('Method not implemented.')
+  createDb() {
+    return this.fruits
   }
 
   generateId(): number {
