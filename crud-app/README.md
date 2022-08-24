@@ -64,6 +64,12 @@ ng g c components/dashboard
 
 At this point, for the sole purpose of development, I have chosen to simulate the connection with a remote server.
 
+### I install angular-in-memory-web-api
+
+```shell
+npm i angular-in-memory-web-api
+```
+
 ## serve
 
 ```shell
