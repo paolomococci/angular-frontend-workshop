@@ -63,7 +63,14 @@ export class FruitService {
     return fruits
   }
 
-  getFruitById(): void {}
+  getFruitById(id: number): Observable<Fruit> {
+    const url = `${this.fruitsBaseUrl}/${id}`
+    return this.httpClient.get<Fruit>(url)
+      .pipe(
+        tap(_ => this.log(`retrieved fruit by id=${id}`)),
+        catchError(this.handleError<Fruit>(`getFruitById id=${id}`))
+      )
+  }
 
   getFruitsThanksToHttpClient(): Observable<Fruit[]> {
     return this.httpClient
