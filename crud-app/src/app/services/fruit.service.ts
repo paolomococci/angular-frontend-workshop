@@ -35,6 +35,14 @@ export class FruitService {
     this.messageService.add(`FruitService: ${message}`)
   }
 
+  private handleError<T>(
+    arg0: string, arg1: never[]
+  ): (
+    err: any, caught: Observable<Fruit[]>
+  ) => import("rxjs").ObservableInput<any> {
+    throw new Error('Method not implemented.')
+  }
+
   getFruit(id: number): Observable<Fruit> {
     const fruit = FruitsData.fruits.find(
       temp => temp.id === id
@@ -52,7 +60,17 @@ export class FruitService {
   }
 
   getFruitsThanksToHttpClient(): Observable<Fruit[]> {
-    return this.httpClient.get<Fruit[]>(this.fruitsBaseUrl)
+    return this.httpClient
+      .get<Fruit[]>(
+        this.fruitsBaseUrl
+      ).pipe(
+        catchError(
+          this.handleError<Fruit[]>(
+            'getFruitsThanksToHttpClient',
+            []
+          )
+        )
+      )
   }
 
 }
