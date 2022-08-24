@@ -23,7 +23,9 @@ export class FruitService {
     private messageService: MessageService
   ) { }
 
-  private log() {}
+  private log(message: string) {
+    this.messageService.add(`FruitService: ${message}`)
+  }
 
   getFruit(id: number): Observable<Fruit> {
     const fruit = FruitsData.fruits.find(
