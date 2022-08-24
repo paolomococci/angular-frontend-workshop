@@ -44,4 +44,6 @@ export class FruitService {
     this.messageService.add('retrieved the identifiers of the following fruits:')
     return fruits
   }
+
+  getFruitsThanksToHttp(): void {}
 }
