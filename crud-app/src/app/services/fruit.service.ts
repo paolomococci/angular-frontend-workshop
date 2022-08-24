@@ -18,6 +18,8 @@ import { MessageService } from './message.service'
 })
 export class FruitService {
 
+  private fruitsBaseUrl: string = 'api/fruits'
+
   constructor(
     private httpClient: HttpClient,
     private messageService: MessageService
