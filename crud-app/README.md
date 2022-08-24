@@ -60,6 +60,10 @@ ng g s services/fruit
 ng g c components/dashboard
 ```
 
+## mimic communication with the backend
+
+At this point, for the sole purpose of development, I have chosen to simulate the connection with a remote server.
+
 ## serve
 
 ```shell
