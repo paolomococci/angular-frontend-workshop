@@ -23,6 +23,8 @@ export class FruitService {
     private messageService: MessageService
   ) { }
 
+  private log() {}
+
   getFruit(id: number): Observable<Fruit> {
     const fruit = FruitsData.fruits.find(
       temp => temp.id === id
