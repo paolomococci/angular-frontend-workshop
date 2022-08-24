@@ -18,7 +18,11 @@ export class DataService implements InMemoryDbService {
   }
 
   generateId(fruits: Fruit[]): number {
-    return 0
+    return fruits.length > 0 ? Math.max(
+      ...fruits.map(
+        fruit => fruit.id
+      )
+    ) + 45 : 1000
   }
 
 }
