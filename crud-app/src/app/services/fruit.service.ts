@@ -36,11 +36,15 @@ export class FruitService {
   }
 
   private handleError<T>(
-    arg0: string, arg1: never[]
-  ): (
-    err: any, caught: Observable<Fruit[]>
-  ) => import("rxjs").ObservableInput<any> {
-    throw new Error('Method not implemented.')
+    operation = 'operation', result?: T
+  ) {
+    return (error: any): Observable<T> => {
+      console.error(error)
+      this.log(
+        `${operation} failed: ${error.message}`
+      )
+      return of(result as T)
+    }
   }
 
   getFruit(id: number): Observable<Fruit> {
