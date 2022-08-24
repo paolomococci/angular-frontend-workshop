@@ -68,6 +68,9 @@ export class FruitService {
       .get<Fruit[]>(
         this.fruitsBaseUrl
       ).pipe(
+        tap(
+          _ => this.log('retrieved fruits')
+        ),
         catchError(
           this.handleError<Fruit[]>(
             'getFruitsThanksToHttpClient',
