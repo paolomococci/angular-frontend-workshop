@@ -10,7 +10,13 @@ import { FruitsData } from '../data/fruits-data'
 export class DataService implements InMemoryDbService {
 
   constructor() { }
-  createDb(reqInfo?: RequestInfo | undefined): {} | Observable<{}> | Promise<{}> {
+
+  createDb(): {} | Observable<{}> | Promise<{}> {
     throw new Error('Method not implemented.')
   }
+
+  generateId(): number {
+    return 0
+  }
+
 }
