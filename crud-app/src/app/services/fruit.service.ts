@@ -45,5 +45,8 @@ export class FruitService {
     return fruits
   }
 
-  getFruitsThanksToHttp(): void {}
+  getFruitsThanksToHttpClient(): Observable<Fruit[]> {
+    return this.httpClient.get<Fruit[]>(this.fruitsBaseUrl)
+  }
+
 }
