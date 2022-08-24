@@ -18,7 +18,10 @@ import { MessageService } from './message.service'
 })
 export class FruitService {
 
-  constructor(private messageService: MessageService) { }
+  constructor(
+    private httpClient: HttpClient,
+    private messageService: MessageService
+  ) { }
 
   getFruit(id: number): Observable<Fruit> {
     const fruit = FruitsData.fruits.find(
