@@ -70,6 +70,12 @@ At this point, for the sole purpose of development, I have chosen to simulate th
 npm i angular-in-memory-web-api
 ```
 
+## I add data service
+
+```shell
+ng g s services/data
+```
+
 ## serve
 
 ```shell
