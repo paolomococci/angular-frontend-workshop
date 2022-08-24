@@ -17,7 +17,7 @@ export class DataService implements InMemoryDbService {
     return this.fruits
   }
 
-  generateId(): number {
+  generateId(fruits: Fruit[]): number {
     return 0
   }
 
