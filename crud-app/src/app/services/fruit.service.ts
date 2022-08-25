@@ -82,6 +82,7 @@ export class FruitService {
         tap((newFruit: Fruit) => this.log(
           `create new fruit id=${newFruit.id}`
         )),
+        catchError(this.handleError<Fruit>('create'))
       )
   }
 
