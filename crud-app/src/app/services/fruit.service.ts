@@ -27,7 +27,11 @@ export class FruitService {
 
   private fruitsBaseUrl: string = 'api/fruits'
 
-  httpOptions = {}
+  httpOptions = {
+    headers: new HttpHeaders(
+      { 'Content-Type': 'application/json' }
+    )
+  }
 
   constructor(
     private httpClient: HttpClient,
