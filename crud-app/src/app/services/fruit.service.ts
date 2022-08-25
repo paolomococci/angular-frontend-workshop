@@ -72,7 +72,9 @@ export class FruitService {
     return fruits
   }
 
-  create(): void {}
+  create(fruit: Fruit): Observable<Fruit> {
+    return this.httpClient.post<Fruit>(this.fruitsBaseUrl, fruit, this.httpOptions)
+  }
 
   readError404(): void {}
 
