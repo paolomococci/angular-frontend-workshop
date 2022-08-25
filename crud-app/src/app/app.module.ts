@@ -13,6 +13,7 @@ import { FruitsComponent } from './components/fruits/fruits.component'
 import { FruitDetailsComponent } from './components/fruit-details/fruit-details.component'
 import { MessagesComponent } from './components/messages/messages.component'
 import { DashboardComponent } from './components/dashboard/dashboard.component'
+import { SearchComponent } from './components/search/search.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component'
     FruitsComponent,
     FruitDetailsComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
