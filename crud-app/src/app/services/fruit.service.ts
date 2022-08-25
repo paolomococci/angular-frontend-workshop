@@ -73,7 +73,16 @@ export class FruitService {
   }
 
   create(fruit: Fruit): Observable<Fruit> {
-    return this.httpClient.post<Fruit>(this.fruitsBaseUrl, fruit, this.httpOptions)
+    return this.httpClient.post<Fruit>(
+      this.fruitsBaseUrl,
+      fruit,
+      this.httpOptions
+    )
+      .pipe(
+        tap((newFruit: Fruit) => this.log(
+          `create new fruit id=${newFruit.id}`
+        )),
+      )
   }
 
   readError404(): void {}
