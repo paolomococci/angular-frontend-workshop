@@ -33,14 +33,14 @@ export class FruitService {
     )
   }
 
+  private log(message: string) {
+    this.messageService.add(`FruitService: ${message}`)
+  }
+
   constructor(
     private httpClient: HttpClient,
     private messageService: MessageService
   ) { }
-
-  private log(message: string) {
-    this.messageService.add(`FruitService: ${message}`)
-  }
 
   private handleError<T>(
     operation = 'operation', result?: T
