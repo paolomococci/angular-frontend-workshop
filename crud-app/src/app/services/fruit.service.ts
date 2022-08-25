@@ -37,11 +37,6 @@ export class FruitService {
     this.messageService.add(`FruitService: ${message}`)
   }
 
-  constructor(
-    private httpClient: HttpClient,
-    private messageService: MessageService
-  ) { }
-
   private handleError<T>(
     operation = 'operation', result?: T
   ) {
@@ -53,6 +48,11 @@ export class FruitService {
       return of(result as T)
     }
   }
+
+  constructor(
+    private httpClient: HttpClient,
+    private messageService: MessageService
+  ) { }
 
   /* to be removed */
   getFruit(id: number): Observable<Fruit> {
