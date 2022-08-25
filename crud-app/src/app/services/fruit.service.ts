@@ -72,6 +72,7 @@ export class FruitService {
     return fruits
   }
 
+  /* POST HTTP method */
   create(fruit: Fruit): Observable<Fruit> {
     return this.httpClient.post<Fruit>(
       this.fruitsBaseUrl,
@@ -86,8 +87,11 @@ export class FruitService {
       )
   }
 
+
+  /* GET HTTP method */
   readError404(): void {}
 
+  /* GET HTTP method */
   read(id: number): Observable<Fruit> {
     const url = `${this.fruitsBaseUrl}/${id}`
     return this.httpClient.get<Fruit>(url)
@@ -97,6 +101,7 @@ export class FruitService {
       )
   }
 
+  /* GET HTTP method */
   readAll(): Observable<Fruit[]> {
     return this.httpClient
       .get<Fruit[]>(
@@ -114,8 +119,10 @@ export class FruitService {
       )
   }
 
+  /* PUT HTTP method */
   update(): void {}
 
+  /* DELETE HTTP method */
   delete(): void {}
 
   search(): void {}
