@@ -89,12 +89,25 @@ export class FruitService {
 
 
   /* GET HTTP method */
-  readError404(): void {}
+  readError404<Data>(id: number): Observable<Fruit> {
+    const url = `${this.fruitsBaseUrl}/?id=${id}`
+    return this.httpClient
+      .get<Fruit[]>(url)
+      .pipe(
+        map(fruits => fruits[0]),
+        tap(temp => {
+          const outcome = temp ? 'retrieved' : 'not found'
+          this.log(`${outcome} fruit id=${id}`)
+        }),
+        catchError(this.handleError<Fruit>(`read id=${id}`))
+      )
+  }
 
   /* GET HTTP method */
   read(id: number): Observable<Fruit> {
     const url = `${this.fruitsBaseUrl}/${id}`
-    return this.httpClient.get<Fruit>(url)
+    return this.httpClient
+      .get<Fruit>(url)
       .pipe(
         tap(_ => this.log(`retrieved fruit by id=${id}`)),
         catchError(this.handleError<Fruit>(`read id=${id}`))
