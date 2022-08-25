@@ -157,6 +157,22 @@ export class FruitService {
       )
   }
 
-  search(): void {}
+  /* GET HTTP method */
+  search(temp: string): Observable<Fruit[]> {
+    if (!temp.trim()) {
+      return of([])
+    } else {
+      return this.httpClient
+        .get<Fruit[]>(`${this.fruitsBaseUrl}/?name=${temp}`)
+        .pipe(
+          tap(
+            fruits => fruits.length ?
+            this.log(`found fruits matching "${temp}"`) :
+            this.log(`no fruits matching "${temp}"`)
+          ),
+          catchError(this.handleError<Fruit[]>('search', []))
+        )
+    }
+  }
 
 }
