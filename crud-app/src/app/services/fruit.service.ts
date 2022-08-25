@@ -70,6 +70,8 @@ export class FruitService {
 
   create(): void {}
 
+  readError404(): void {}
+
   read(id: number): Observable<Fruit> {
     const url = `${this.fruitsBaseUrl}/${id}`
     return this.httpClient.get<Fruit>(url)
