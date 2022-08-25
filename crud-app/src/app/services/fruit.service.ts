@@ -133,7 +133,18 @@ export class FruitService {
   }
 
   /* PUT HTTP method */
-  update(): void {}
+  update(fruit: Fruit): Observable<any> {
+    return this.httpClient
+      .put(
+        this.fruitsBaseUrl,
+        fruit,
+        this.httpOptions
+      )
+      .pipe(
+        tap(_ => this.log(`updated fruit id=${fruit.id}`)),
+        catchError(this.handleError<any>('update'))
+      )
+  }
 
   /* DELETE HTTP method */
   delete(): void {}
