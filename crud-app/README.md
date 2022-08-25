@@ -76,6 +76,12 @@ npm i angular-in-memory-web-api
 ng g s services/data
 ```
 
+## I add search component
+
+```shell
+ng g c components/search
+```
+
 ## serve
 
 ```shell
