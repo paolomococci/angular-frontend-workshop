@@ -27,6 +27,8 @@ export class FruitService {
 
   private fruitsBaseUrl: string = 'api/fruits'
 
+  httpOptions = {}
+
   constructor(
     private httpClient: HttpClient,
     private messageService: MessageService
@@ -48,6 +50,7 @@ export class FruitService {
     }
   }
 
+  /* to be removed */
   getFruit(id: number): Observable<Fruit> {
     const fruit = FruitsData.fruits.find(
       temp => temp.id === id
@@ -58,22 +61,23 @@ export class FruitService {
     return of(fruit)
   }
 
+  /* to be removed */
   getFruits(): Observable<Fruit[]> {
     const fruits = of(FruitsData.fruits)
     this.messageService.add('retrieved the identifiers of the following fruits:')
     return fruits
   }
 
-  getFruitById(id: number): Observable<Fruit> {
+  read(id: number): Observable<Fruit> {
     const url = `${this.fruitsBaseUrl}/${id}`
     return this.httpClient.get<Fruit>(url)
       .pipe(
         tap(_ => this.log(`retrieved fruit by id=${id}`)),
-        catchError(this.handleError<Fruit>(`getFruitById id=${id}`))
+        catchError(this.handleError<Fruit>(`read id=${id}`))
       )
   }
 
-  getFruitsThanksToHttpClient(): Observable<Fruit[]> {
+  readAll(): Observable<Fruit[]> {
     return this.httpClient
       .get<Fruit[]>(
         this.fruitsBaseUrl
@@ -83,7 +87,7 @@ export class FruitService {
         ),
         catchError(
           this.handleError<Fruit[]>(
-            'getFruitsThanksToHttpClient',
+            'readAll',
             []
           )
         )
