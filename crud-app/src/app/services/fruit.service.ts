@@ -147,7 +147,15 @@ export class FruitService {
   }
 
   /* DELETE HTTP method */
-  delete(): void {}
+  delete(id: number): Observable<Fruit> {
+    const url = `${this.fruitsBaseUrl}/${id}`
+    return this.httpClient
+      .delete<Fruit>(url, this.httpOptions)
+      .pipe(
+        tap(_ => this.log(`deleted fruit id=${id}`)),
+        catchError(this.handleError<Fruit>('delete'))
+      )
+  }
 
   search(): void {}
 
