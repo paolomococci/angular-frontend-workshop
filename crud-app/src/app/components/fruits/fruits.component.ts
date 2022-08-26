@@ -45,6 +45,13 @@ export class FruitsComponent implements OnInit {
     }
   }
 
-  delete(fruit: Fruit): void {}
+  delete(fruit: Fruit): void {
+    this.fruits = this.fruits.filter(
+      temp => temp !== fruit
+    )
+    this.fruitService.delete(
+      fruit.id
+    ).subscribe()
+  }
 
 }
