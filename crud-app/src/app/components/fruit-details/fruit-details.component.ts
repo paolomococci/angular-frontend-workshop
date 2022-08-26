@@ -24,10 +24,10 @@ export class FruitDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getFruit()
+    this.read()
   }
 
-  getFruit(): void {
+  read(): void {
     const id = parseInt(
       this.activateRoute.snapshot.paramMap.get('id')!
     )
