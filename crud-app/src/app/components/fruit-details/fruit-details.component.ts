@@ -28,8 +28,8 @@ export class FruitDetailsComponent implements OnInit {
   }
 
   getFruit(): void {
-    const id = Number(
-      this.activateRoute.snapshot.paramMap.get('id')
+    const id = parseInt(
+      this.activateRoute.snapshot.paramMap.get('id')!
     )
     this.fruitService.read(id).subscribe(
       fruit => this.fruit = fruit
