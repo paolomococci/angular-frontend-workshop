@@ -30,8 +30,8 @@ export class FruitsComponent implements OnInit {
       )
   }
 
-  create(): void {}
+  create(name: string): void {}
 
-  delete(): void {}
+  delete(fruit: Fruit): void {}
 
 }
