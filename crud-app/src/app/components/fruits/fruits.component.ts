@@ -30,7 +30,20 @@ export class FruitsComponent implements OnInit {
       )
   }
 
-  create(name: string): void {}
+  create(name: string): void {
+    name = name.trim()
+    if (!name) {
+      return
+    } else {
+      this.fruitService.create(
+        { name } as Fruit
+      ).subscribe(
+        fruit => {
+          this.fruits.push(fruit)
+        }
+      )
+    }
+  }
 
   delete(fruit: Fruit): void {}
 
