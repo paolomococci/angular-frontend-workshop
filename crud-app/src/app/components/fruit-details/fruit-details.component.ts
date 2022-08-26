@@ -40,4 +40,6 @@ export class FruitDetailsComponent implements OnInit {
     this.location.back()
   }
 
+  save(): void {}
+
 }
