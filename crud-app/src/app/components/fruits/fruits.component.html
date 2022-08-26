@@ -15,7 +15,11 @@
         <span class="badge">
           {{fruit.id}}
         </span>
-          {{fruit.name}}</a>
+          {{fruit.name}}
+      </a>
+      <button type="button" class="delete" title="delete fruit" (click)="delete(fruit)">
+        delete
+      </button>
     </li>
   </ul>
 </div>
