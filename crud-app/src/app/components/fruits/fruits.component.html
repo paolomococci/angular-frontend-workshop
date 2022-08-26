@@ -1,6 +1,11 @@
 <h3>fruit list</h3>
 
 <div>
+  <label for="add-fruit">add fruit</label>
+  <input id="add-fruit" #fruitName>
+</div>
+
+<div>
   <ul class="fruits">
     <li *ngFor="let fruit of fruits">
       <a routerLink="/detail/{{fruit.id}}">
