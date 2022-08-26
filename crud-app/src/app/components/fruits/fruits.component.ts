@@ -20,11 +20,11 @@ export class FruitsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getFruits()
+    this.readAll()
   }
 
-  getFruits(): void {
-    this.fruitService.getFruits()
+  readAll(): void {
+    this.fruitService.readAll()
       .subscribe(
         fruits => this.fruits = fruits
       )
