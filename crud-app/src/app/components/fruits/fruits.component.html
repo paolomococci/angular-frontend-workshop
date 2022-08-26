@@ -3,6 +3,9 @@
 <div>
   <label for="add-fruit">add fruit</label>
   <input id="add-fruit" #fruitName>
+  <button type="button" class="create" (click)="create(fruitName.value); fruitName.value=''">
+    create
+  </button>
 </div>
 
 <div>
