@@ -31,15 +31,25 @@ export class FruitDetailsComponent implements OnInit {
     const id = parseInt(
       this.activateRoute.snapshot.paramMap.get('id')!
     )
-    this.fruitService.read(id).subscribe(
-      fruit => this.fruit = fruit
-    )
+    this.fruitService
+      .read(id)
+      .subscribe(
+        fruit => this.fruit = fruit
+      )
   }
 
   goBack(): void {
     this.location.back()
   }
 
-  save(): void {}
+  save(): void {
+    if (this.fruit) {
+      this.fruitService
+        .update(this.fruit)
+        .subscribe(
+          () => this.goBack()
+        )
+    }
+  }
 
 }
