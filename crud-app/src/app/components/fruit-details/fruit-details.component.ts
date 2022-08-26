@@ -42,7 +42,7 @@ export class FruitDetailsComponent implements OnInit {
     this.location.back()
   }
 
-  save(): void {
+  update(): void {
     if (this.fruit) {
       this.fruitService
         .update(this.fruit)
