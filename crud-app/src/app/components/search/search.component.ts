@@ -24,9 +24,27 @@ import { FruitService } from 'src/app/services/fruit.service'
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  private searchTerms = new Subject<string>()
+
+  fruits$!: Observable<Fruit[]>
+
+  constructor(
+    private fruitService: FruitService
+  ) { }
 
   ngOnInit(): void {
+    this.fruits$ = this.searchTerms
+      .pipe(
+        debounceTime(400),
+        distinctUntilChanged(),
+        switchMap(
+          (term: string) => this.fruitService.search(term)
+        ),
+      )
+  }
+
+  search(term: string): void {
+    this.searchTerms.next(term)
   }
 
 }
