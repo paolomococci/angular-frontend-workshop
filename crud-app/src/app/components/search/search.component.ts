@@ -14,6 +14,9 @@ import {
   switchMap
 } from 'rxjs/operators'
 
+import { Fruit } from 'src/app/models/fruit.model'
+import { FruitService } from 'src/app/services/fruit.service'
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
