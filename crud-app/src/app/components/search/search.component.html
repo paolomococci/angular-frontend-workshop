@@ -1,1 +1,16 @@
-<p>search works!</p>
+<div id="search-component">
+  <label for="search-field">search</label>
+  <input
+    id="search-field"
+    #stringToSearchFor
+    (input)="search(stringToSearchFor.value)">
+
+  <ul class="search-result">
+    <li *ngFor="let fruit of fruits$ | async">
+      <a routerLink="/detail/{{fruit.id}}">
+        {{fruit.name}}
+      </a>
+    </li>
+  </ul>
+
+</div>
