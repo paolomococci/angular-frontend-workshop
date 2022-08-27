@@ -3,6 +3,11 @@ import {
   OnInit
 } from '@angular/core'
 
+import {
+  Observable,
+  Subject
+} from 'rxjs'
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
