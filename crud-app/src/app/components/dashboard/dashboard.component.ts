@@ -18,11 +18,11 @@ export class DashboardComponent implements OnInit {
   constructor(private fruitService: FruitService) { }
 
   ngOnInit(): void {
-    this.getFruits()
+    this.readAll()
   }
 
-  getFruits(): void {
-    this.fruitService.getFruits().subscribe(
+  readAll(): void {
+    this.fruitService.readAll().subscribe(
       fruits => this.fruits = fruits
     )
   }
