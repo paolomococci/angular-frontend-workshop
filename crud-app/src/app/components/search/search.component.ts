@@ -8,6 +8,12 @@ import {
   Subject
 } from 'rxjs'
 
+import {
+  debounceTime,
+  distinctUntilChanged,
+  switchMap
+} from 'rxjs/operators'
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
