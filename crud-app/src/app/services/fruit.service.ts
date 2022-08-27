@@ -54,24 +54,6 @@ export class FruitService {
     private messageService: MessageService
   ) { }
 
-  /* to be removed */
-  getFruit(id: number): Observable<Fruit> {
-    const fruit = FruitsData.fruits.find(
-      temp => temp.id === id
-    )!
-    this.messageService.add(
-      `retrieved fruit id: ${id}`
-    )
-    return of(fruit)
-  }
-
-  /* to be removed */
-  getFruits(): Observable<Fruit[]> {
-    const fruits = of(FruitsData.fruits)
-    this.messageService.add('retrieved the identifiers of the following fruits:')
-    return fruits
-  }
-
   /* POST HTTP method */
   create(fruit: Fruit): Observable<Fruit> {
     return this.httpClient.post<Fruit>(
