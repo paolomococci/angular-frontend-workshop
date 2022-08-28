@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { InMemoryDbService, RequestInfo } from 'angular-in-memory-web-api'
+import { InMemoryDbService } from 'angular-in-memory-web-api'
 
 import { Fruit } from 'src/app/models/fruit.model'
 import { FruitsData } from '../data/fruits-data'
