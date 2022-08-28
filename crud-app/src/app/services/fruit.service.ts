@@ -17,7 +17,6 @@ import {
 } from '@angular/common/http'
 
 import { Fruit } from '../models/fruit.model'
-import { FruitsData } from '../data/fruits-data'
 import { MessageService } from './message.service'
 
 @Injectable({
