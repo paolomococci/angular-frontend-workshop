@@ -1,11 +1,14 @@
 <div>
   <h3>fruits</h3>
+
+  <div>
+    <app-search></app-search>
+  </div>
+
   <div class="fruits-menu">
     <a *ngFor="let fruit of fruits" routerLink="/detail/{{fruit.id}}">
       {{fruit.name}}
     </a>
   </div>
-
-  <app-search></app-search>
 
 </div>
