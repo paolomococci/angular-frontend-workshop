@@ -1,5 +1,7 @@
 # CrudApp
 
+Application developed thanks to the Angular 14.2.2
+
 ## scaffolding
 
 ```shell
