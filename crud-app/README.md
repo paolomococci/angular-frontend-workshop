@@ -87,3 +87,7 @@ ng g c components/search
 ```shell
 ng serve -o
 ```
+
+## screenshot
+
+![control panel of fruits crud-app](https://github.com/paolomococci/angular-frontend-workshop/blob/main/screenshots/crud-app_screenshot_2022-09-16.png)
