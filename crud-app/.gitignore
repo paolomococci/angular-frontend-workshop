@@ -37,6 +37,7 @@ testem.log
 package-lock.json
 HELP.md
 *.ico
+/target
 
 # System files
 .DS_Store
