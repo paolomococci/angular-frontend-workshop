@@ -8,6 +8,12 @@ cd customized-ui
 ng g library ui-controls
 ```
 
+## I remove the newly installed packages
+
+```shell
+rm --recursive node_modules && rm package-lock.json
+```
+
 ## I update the dependencies to the latest version and proceed with the installation
 
 ```shell
