@@ -54,3 +54,9 @@ ng g c card-list --project=ui-controls --export
 ```shell
 ng g i card --project=ui-controls
 ```
+
+## I build ui-controls
+
+```shell
+ng build ui-controls
+```
