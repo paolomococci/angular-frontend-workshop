@@ -1,7 +1,9 @@
 import {
   Component,
+  Input,
   OnInit
 } from '@angular/core'
+import { Card } from '../card'
 
 @Component({
   selector: 'lib-card-list',
@@ -9,6 +11,8 @@ import {
   styleUrls: ['./card-list.component.sass']
 })
 export class CardListComponent implements OnInit {
+
+  @Input() cards: Card[] = []
 
   constructor() { }
 
