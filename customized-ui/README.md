@@ -31,3 +31,14 @@ npm i @angular/cdk
 ```shell
 npm i bulma
 ```
+
+###
+
+```text
+...
+            "styles": [
+              "src/styles.sass"'
+              "./node_modules/bulma/css/bulma.css"
+            ],
+...
+```
