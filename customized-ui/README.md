@@ -42,3 +42,9 @@ npm i bulma
             ],
 ...
 ```
+
+## I generate card-list component
+
+```shell
+ng g c card-list --project=ui-controls --export
+```
