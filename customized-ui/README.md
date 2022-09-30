@@ -48,3 +48,9 @@ npm i bulma
 ```shell
 ng g c card-list --project=ui-controls --export
 ```
+
+## I generate card interface
+
+```shell
+ng g i card --project=ui-controls
+```
