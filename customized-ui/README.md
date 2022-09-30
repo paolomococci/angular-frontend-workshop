@@ -32,7 +32,7 @@ npm i @angular/cdk
 npm i bulma
 ```
 
-###
+### I edited file angular.json after the two occurrences "styles"
 
 ```text
 ...
