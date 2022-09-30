@@ -19,3 +19,9 @@ rm --recursive node_modules && rm package-lock.json
 ```shell
 npm install
 ```
+
+## now I proceed to install package Angular CDK
+
+```shell
+npm i @angular/cdk
+```
