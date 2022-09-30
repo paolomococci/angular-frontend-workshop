@@ -66,3 +66,9 @@ ng build ui-controls
 ```shell
 ng g cl data/SampleData
 ```
+
+## and now I start the application for the first time
+
+```shell
+ng serve -o
+```
