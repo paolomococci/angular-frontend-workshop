@@ -25,3 +25,9 @@ npm install
 ```shell
 npm i @angular/cdk
 ```
+
+## and now it's the turn of package bulma, a modern CSS framework
+
+```shell
+npm i bulma
+```
