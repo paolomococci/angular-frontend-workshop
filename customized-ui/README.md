@@ -60,3 +60,9 @@ ng g i card --project=ui-controls
 ```shell
 ng build ui-controls
 ```
+
+## I add SampleData class
+
+```shell
+ng g cl data/SampleData
+```
