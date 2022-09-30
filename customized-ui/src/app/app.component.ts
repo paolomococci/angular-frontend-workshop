@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { Card } from 'ui-controls'
 
 @Component({
   selector: 'app-root',
