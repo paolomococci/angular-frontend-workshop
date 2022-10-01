@@ -9,7 +9,7 @@
       <input class="input" type="text" [ngModel]="title">
     </div>
     <div class="control">
-      <lib-copy-button></lib-copy-button>
+      <lib-copy-button [data]="title" (copied)="log()"></lib-copy-button>
     </div>
   </div>
 </div>
