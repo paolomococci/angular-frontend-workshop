@@ -9,9 +9,14 @@ import { SampleData } from './data/sample-data'
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
+
   title = 'customized-ui'
+
   cards: Card[] = SampleData.cards
+
   onCardChange(cards: Card[]) {
     console.log(cards)
   }
+
+  log() {}
 }
