@@ -21,6 +21,8 @@ export class CardListComponent implements OnInit {
 
   @Input() cards: Card[] = []
 
+  @Output() cardChange = new EventEmitter<Card[]>()
+
   constructor() { }
 
   ngOnInit(): void {
