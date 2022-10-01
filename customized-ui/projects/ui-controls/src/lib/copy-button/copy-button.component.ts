@@ -1,6 +1,9 @@
 import {
   Component,
-  OnInit
+  Input,
+  OnInit,
+  Output,
+  EventEmitter
 } from '@angular/core'
 
 @Component({
