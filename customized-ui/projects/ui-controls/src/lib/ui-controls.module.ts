@@ -10,7 +10,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop'
     CardListComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    DragDropModule
   ],
   exports: [
     UiControlsComponent,
