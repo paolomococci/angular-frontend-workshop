@@ -9,7 +9,7 @@ import {
 @Component({
   selector: 'lib-copy-button',
   templateUrl: './copy-button.component.html',
-  styleUrls: ['./copy-button.component.css']
+  styleUrls: ['./copy-button.component.sass']
 })
 export class CopyButtonComponent implements OnInit {
 
