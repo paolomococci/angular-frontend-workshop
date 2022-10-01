@@ -22,4 +22,6 @@ export class CopyButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onCopy() {}
+
 }
