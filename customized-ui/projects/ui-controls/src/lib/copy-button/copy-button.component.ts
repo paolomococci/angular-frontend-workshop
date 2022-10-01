@@ -13,6 +13,10 @@ import {
 })
 export class CopyButtonComponent implements OnInit {
 
+  @Input() data = ''
+
+  @Output() copied = new EventEmitter()
+
   constructor() { }
 
   ngOnInit(): void {
