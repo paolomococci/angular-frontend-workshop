@@ -5,6 +5,10 @@ import {
   OnInit,
   EventEmitter
 } from '@angular/core'
+import {
+  CdkDragDrop,
+  moveItemInArray
+} from '@angular/cdk/drag-drop'
 
 import { Card } from '../card'
 
