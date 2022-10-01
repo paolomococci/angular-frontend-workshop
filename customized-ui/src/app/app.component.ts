@@ -11,4 +11,5 @@ import { SampleData } from './data/sample-data'
 export class AppComponent {
   title = 'customized-ui'
   cards: Card[] = SampleData.cards
+  onCardChange(cards: Card[]) {}
 }
