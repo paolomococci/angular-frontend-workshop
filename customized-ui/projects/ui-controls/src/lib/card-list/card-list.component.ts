@@ -1,8 +1,11 @@
 import {
   Component,
   Input,
-  OnInit
+  Output,
+  OnInit,
+  EventEmitter
 } from '@angular/core'
+
 import { Card } from '../card'
 
 @Component({
