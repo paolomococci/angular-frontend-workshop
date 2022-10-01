@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
-import { Card } from 'ui-controls'
 
+import { Card } from 'ui-controls'
 import { SampleData } from './data/sample-data'
 
 @Component({
