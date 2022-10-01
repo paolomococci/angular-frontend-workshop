@@ -28,6 +28,13 @@ export class CardListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  sortCards(event: CdkDragDrop<string[]>): void {}
+  sortCards(event: CdkDragDrop<string[]>): void {
+    moveItemInArray(
+      this.cards,
+      event.previousIndex,
+      event.currentIndex
+    )
+    this.cardChange.emit(this.cards)
+  }
 
 }
