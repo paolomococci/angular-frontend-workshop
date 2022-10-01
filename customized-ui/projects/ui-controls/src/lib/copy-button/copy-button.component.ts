@@ -15,13 +15,15 @@ export class CopyButtonComponent implements OnInit {
 
   @Input() data = ''
 
-  @Output() copied = new EventEmitter()
+  @Output() copied = new EventEmitter<void>()
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onCopy() {}
+  onCopy() {
+    this.copied.next()
+  }
 
 }
