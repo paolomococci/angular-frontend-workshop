@@ -67,6 +67,12 @@ ng build ui-controls
 ng g cl data/SampleData
 ```
 
+## I generate copy-button component
+
+```shell
+ng g c copy-button --project=ui-controls --export
+```
+
 ## and now I start the application for the first time
 
 ```shell
