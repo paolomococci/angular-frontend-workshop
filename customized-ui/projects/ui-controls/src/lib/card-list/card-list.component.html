@@ -1,4 +1,4 @@
-<div cdkDropListOrientation="horizontal" cdkDropList(cdkDropListDropped)="sortCards($event)">
+<div cdkDropListOrientation="horizontal" cdkDropList (cdkDropListDropped)="sortCards($event)">
   <div cdkDrag class="card m-4" *ngFor="let card of cards">
     <header class="card-header">
       <p class="card-header-title">
