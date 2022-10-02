@@ -103,3 +103,5 @@ ng add ngx-build-plus --project=ui-sample
 ng b ui-controls
 ng b ui-sample
 ```
+
+At this point, it will only take a few changes to the code written in index.html, to work autonomously ui-sample.
