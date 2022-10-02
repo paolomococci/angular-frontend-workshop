@@ -15,7 +15,8 @@ import {
   declarations: [],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UiControlsModule
   ],
   providers: [],
   bootstrap: []
