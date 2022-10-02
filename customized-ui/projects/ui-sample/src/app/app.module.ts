@@ -21,4 +21,9 @@ import {
   providers: [],
   bootstrap: []
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor(private injector: Injector) {}
+
+  ngDoBootstrap():void {}
+}
