@@ -84,3 +84,9 @@ ng serve -o
 ```shell
 ng g app ui-sample --routing --style=sass --skip-install --skip-tests
 ```
+
+## I install the Angular Elements package
+
+```shell
+ng add @angular/elements --project=ui-sample
+```
