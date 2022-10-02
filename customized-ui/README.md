@@ -90,3 +90,9 @@ ng g app ui-sample --routing --style=sass --skip-install --skip-tests
 ```shell
 ng add @angular/elements --project=ui-sample
 ```
+
+## I install the ngx-build-plus package
+
+```shell
+ng add ngx-build-plus --project=ui-sample
+```
