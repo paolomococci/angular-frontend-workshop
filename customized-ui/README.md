@@ -96,3 +96,10 @@ ng add @angular/elements --project=ui-sample
 ```shell
 ng add ngx-build-plus --project=ui-sample
 ```
+
+## I run the following build commands, turning ui-sample into a standalone web application
+
+```shell
+ng b ui-controls
+ng b ui-sample
+```
