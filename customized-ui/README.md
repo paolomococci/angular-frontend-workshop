@@ -79,8 +79,8 @@ ng build ui-controls
 ng serve -o
 ```
 
-## now, I generate a new Angular application
+## now, I create a new Angular application named ui-sample
 
 ```shell
-
+ng g app ui-sample --routing --style=sass --skip-install --skip-tests
 ```
