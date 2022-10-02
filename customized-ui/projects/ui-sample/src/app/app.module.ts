@@ -3,6 +3,7 @@ import {
   NgModule
 } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
+import { createCustomElement } from '@angular/elements'
 
 
 import { AppRoutingModule } from './app-routing.module'
