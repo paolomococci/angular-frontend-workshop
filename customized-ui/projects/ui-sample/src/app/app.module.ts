@@ -30,5 +30,6 @@ export class AppModule {
       CopyButtonComponent,
       {injector: this.injector}
     )
+    customElements.define('copy-button', element)
   }
 }
