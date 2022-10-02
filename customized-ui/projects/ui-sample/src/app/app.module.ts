@@ -25,5 +25,10 @@ export class AppModule {
 
   constructor(private injector: Injector) {}
 
-  ngDoBootstrap():void {}
+  ngDoBootstrap():void {
+    const element = createCustomElement(
+      CopyButtonComponent,
+      {injector: this.injector}
+    )
+  }
 }
