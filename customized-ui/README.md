@@ -78,3 +78,9 @@ ng build ui-controls
 ```shell
 ng serve -o
 ```
+
+## now, I generate a new Angular application
+
+```shell
+
+```
