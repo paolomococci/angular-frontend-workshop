@@ -1,0 +1,9 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "black-cherry": {
+      "description": "A blank schematic.",
+      "factory": "./black-cherry/index#blackCherry"
+    }
+  }
+}
