@@ -1,7 +1,12 @@
 import {
   Rule, 
   SchematicContext, 
-  Tree
+  Tree,
+  apply,
+  applyTemplates,
+  chain,
+  mergeWith,
+  move
 } from '@angular-devkit/schematics'
 
 import {
