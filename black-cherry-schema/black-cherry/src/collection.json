@@ -4,7 +4,7 @@
     "black-cherry": {
       "description": "generate a container component",
       "factory": "./black-cherry/index#blackCherry",
-      "schema": ""
+      "schema": "./black-cherry/schema.json"
     }
   }
 }
