@@ -6,7 +6,8 @@ import {
   applyTemplates,
   chain,
   mergeWith,
-  move
+  move,
+  url
 } from '@angular-devkit/schematics'
 
 import {
