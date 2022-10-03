@@ -2,8 +2,9 @@
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "black-cherry": {
-      "description": "A blank schematic.",
-      "factory": "./black-cherry/index#blackCherry"
+      "description": "generate a container component",
+      "factory": "./black-cherry/index#blackCherry",
+      "schema": ""
     }
   }
 }
