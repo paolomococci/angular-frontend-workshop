@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "black-cherry",
+  "title": "Back Cherry",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "name of component",
+      "type": "string"
+    },
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "path to create the component",
+      "visible": false
+    }
+  },
+  "required": ["name"]
+}
