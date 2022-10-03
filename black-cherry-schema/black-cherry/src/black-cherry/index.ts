@@ -4,6 +4,11 @@ import {
   Tree
 } from '@angular-devkit/schematics'
 
+import {
+  normalize,
+  strings
+} from '@angular-devkit/core'
+
 import { Schema } from './schema'
 
 
