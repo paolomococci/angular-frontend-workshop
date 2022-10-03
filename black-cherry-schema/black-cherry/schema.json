@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "black-cherry",
+  "title": "Back Cherry",
+  "type": "object",
+  "properties": {},
+  "required": []
+}
