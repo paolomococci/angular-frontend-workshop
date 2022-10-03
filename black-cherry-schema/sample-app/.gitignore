@@ -43,3 +43,4 @@ Thumbs.db
 
 # more
 *.ico
+package-lock.json
