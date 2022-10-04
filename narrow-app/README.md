@@ -17,3 +17,9 @@ npm install
 ```shell
 npm i bootstrap
 ```
+
+### edit src/styles.sass
+
+```text
+@import "~bootstrap/scss/bootstrap"
+```
