@@ -1,9 +1,0 @@
-import {
-  Component
-} from '@angular/core'
-
-@Component({
-  selector: 'black-cherry-<%= dasherize(name) %>',
-  templateUrl: './<%= dasherize(name) %>.component.html'
-})
-export class BlackCherry<%= classify(name) %>Component {}
