@@ -14,5 +14,4 @@ cd ..
 ng new sample-app --routing --skip-install --style=sass
 cd sample-app
 npm install
-npm link black-cherry-schematics
 ```
