@@ -11,3 +11,9 @@ ng new narrow-app --routing=false --skip-install --style=sass
 ```shell
 npm install
 ```
+
+## install Bootstrap
+
+```shell
+npm i bootstrap
+```
