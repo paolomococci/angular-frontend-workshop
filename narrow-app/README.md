@@ -16,6 +16,7 @@ npm install
 
 ```shell
 npm i bootstrap
+npm i bootstrap-icons
 ```
 
 ### edit src/styles.sass
