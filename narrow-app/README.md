@@ -34,6 +34,12 @@ npm i bootstrap-icons
 ng g s retriever
 ```
 
+## create personal-info component
+
+```shell
+ng g c personal-info
+```
+
 ## run application in development mode
 
 ```shell
