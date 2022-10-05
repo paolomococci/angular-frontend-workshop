@@ -43,5 +43,6 @@ Thumbs.db
 
 # more
 *.ico
+*.svg
 package-lock.json
 HELP.md
