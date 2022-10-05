@@ -6,5 +6,5 @@ import { HttpClient } from '@angular/common/http'
 })
 export class RetrieverService {
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 }
