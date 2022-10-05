@@ -13,5 +13,9 @@ export class RetrieverService {
   constructor(private httpClient: HttpClient) { }
 
   // method to getting data
-  getUser() {}
+  getUser(): Observable<User> {
+    return this.httpClient.get<User>(
+      ``
+    )
+  }
 }
