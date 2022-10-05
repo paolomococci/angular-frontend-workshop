@@ -24,8 +24,8 @@ npm i bootstrap-icons
 ### edit src/styles.sass
 
 ```text
-@import "~bootstrap/scss/bootstrap"
-@import "~bootstrap-icons/font/bootstrap-icons"
+@import "node_modules/bootstrap/scss/bootstrap"
+@import "node_modules/bootstrap-icons/font/bootstrap-icons"
 ```
 
 ## run application in development mode
