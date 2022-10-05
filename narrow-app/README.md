@@ -23,4 +23,5 @@ npm i bootstrap-icons
 
 ```text
 @import "~bootstrap/scss/bootstrap"
+@import "~bootstrap-icons/font/bootstrap-icons"
 ```
