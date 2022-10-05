@@ -28,6 +28,12 @@ npm i bootstrap-icons
 @import "node_modules/bootstrap-icons/font/bootstrap-icons"
 ```
 
+## create retriever service
+
+```shell
+ng g s retriever
+```
+
 ## run application in development mode
 
 ```shell
