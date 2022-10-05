@@ -1,5 +1,7 @@
 # NarrowApp
 
+An example of a web application of type SSR, (Server-Side Rendering).
+
 ## scaffolding
 
 ```shell
