@@ -27,3 +27,9 @@ npm i bootstrap-icons
 @import "~bootstrap/scss/bootstrap"
 @import "~bootstrap-icons/font/bootstrap-icons"
 ```
+
+## run application in development mode
+
+```shell
+ng serve -o
+```
