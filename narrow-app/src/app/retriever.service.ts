@@ -11,4 +11,7 @@ import { environment } from 'src/environments/environment'
 export class RetrieverService {
 
   constructor(private httpClient: HttpClient) { }
+
+  // method to getting data
+  getUser() {}
 }
