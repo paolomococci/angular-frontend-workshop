@@ -46,3 +46,7 @@ Thumbs.db
 *.svg
 package-lock.json
 HELP.md
+
+# environmets
+environment.prod.ts
+environment.ts
