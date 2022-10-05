@@ -40,6 +40,12 @@ ng g s retriever
 ng g c personal-info
 ```
 
+## create user interface
+
+```shell
+ng g i user
+```
+
 ## run application in development mode
 
 ```shell
