@@ -15,7 +15,7 @@ export class RetrieverService {
   // method to getting data
   getUser(): Observable<User> {
     return this.httpClient.get<User>(
-      ``
+      `${environment.apiUrl}/users/${environment.username}`
     )
   }
 }
