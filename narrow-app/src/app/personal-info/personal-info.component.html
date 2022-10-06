@@ -1,7 +1,9 @@
 <div class="card" *ngIf="user$ | async as user">
   <img class="card-img-top" [src]="user.avatar_url" alt="{{user.name}} photo">
   <div class="card-body">
-    <h5 class=""></h5>
+    <h5 class="card-title">
+      {{user.name}}
+    </h5>
     <p class=""></p>
   </div>
   <ul class="">
