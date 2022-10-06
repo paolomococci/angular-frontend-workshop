@@ -5,6 +5,7 @@ import {
 import { Observable } from 'rxjs'
 
 import { RetrieverService } from '../retriever.service'
+import { User } from '../user'
 
 @Component({
   selector: 'app-personal-info',
