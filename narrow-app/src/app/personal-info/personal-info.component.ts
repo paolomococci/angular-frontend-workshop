@@ -4,6 +4,8 @@ import {
 } from '@angular/core'
 import { Observable } from 'rxjs'
 
+import { RetrieverService } from '../retriever.service'
+
 @Component({
   selector: 'app-personal-info',
   templateUrl: './personal-info.component.html',
