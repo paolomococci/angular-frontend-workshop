@@ -46,6 +46,14 @@ ng g c personal-info
 ng g i user
 ```
 
+## here is a command to get information about your user on GitHub
+
+```shell
+curl -X GET -u username:token https://api.github.com/users/username
+```
+
+Of course you need a really existing username and a valid token.
+
 ## run application in development mode
 
 ```shell
