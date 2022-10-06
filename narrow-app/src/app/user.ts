@@ -3,7 +3,7 @@ export interface User {
   id: number
   node_id: string
   avatar_url: string
-  gravatar_id: string
+  gravatar_id: string | null
   url: string
   html_url: string
   followers_url: string
@@ -17,13 +17,13 @@ export interface User {
   received_events_url: string
   type: string
   site_admin: boolean
-  name: string
+  name: string | null
   company: string | null
-  blog: string
+  blog: string | null
   location: string | null
   email: string | null
   hireable: boolean | null
-  bio: string
+  bio: string | null
   twitter_username: string | null
   public_repos: number
   public_gists: number
