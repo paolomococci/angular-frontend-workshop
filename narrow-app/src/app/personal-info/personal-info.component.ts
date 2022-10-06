@@ -19,6 +19,7 @@ export class PersonalInfoComponent implements OnInit {
   constructor(private retrieverService: RetrieverService) { }
 
   ngOnInit(): void {
+    this.user$ = this.retrieverService.getUser()
   }
 
 }
