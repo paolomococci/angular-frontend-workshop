@@ -14,6 +14,8 @@ import { User } from '../user'
 })
 export class PersonalInfoComponent implements OnInit {
 
+  user$: Observable<User> | undefined
+
   constructor() { }
 
   ngOnInit(): void {
