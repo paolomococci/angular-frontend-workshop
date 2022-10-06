@@ -16,7 +16,7 @@ export class PersonalInfoComponent implements OnInit {
 
   user$: Observable<User> | undefined
 
-  constructor() { }
+  constructor(private retrieverService: RetrieverService) { }
 
   ngOnInit(): void {
   }
