@@ -12,7 +12,7 @@ export class RetrieverService {
 
   constructor(private httpClient: HttpClient) { }
 
-  // method to getting data
+  // method to getting data of user
   getUser(): Observable<User> {
     return this.httpClient.get<User>(
       `${environment.apiUrl}/users/${environment.username}`
