@@ -11,8 +11,14 @@ import { environment } from 'src/environments/environment'
 export class RetrieverService {
 
   uri: string = `${environment.apiUrl}/users/${environment.username}`
-  params: HttpParams = new HttpParams
-  headers: HttpHeaders = new HttpHeaders
+
+  // TODO
+  params: HttpParams = new HttpParams()
+    .set('', ``).set('', ``)
+
+  // TODO
+  headers: HttpHeaders = new HttpHeaders()
+    .set('', ``)
 
   constructor(private httpClient: HttpClient) { }
 
