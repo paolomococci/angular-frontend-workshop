@@ -29,8 +29,7 @@ export class RetrieverService {
   // method to getting data of user
   getUser(): Observable<User> {
     return this.httpClient.get<User>(
-      this.uri,
-      this.options
+      this.uri
     )
   }
 }
