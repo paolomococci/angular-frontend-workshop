@@ -20,6 +20,9 @@ export class RetrieverService {
   headers: HttpHeaders = new HttpHeaders()
     .set('', ``)
 
+  // TODO
+  options: {} | undefined
+
   constructor(private httpClient: HttpClient) { }
 
   // method to getting data of user
