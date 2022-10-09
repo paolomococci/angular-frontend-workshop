@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core'
-import { HttpClient } from '@angular/common/http'
+import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Observable } from 'rxjs'
 
 import { User } from './user'
@@ -11,6 +11,7 @@ import { environment } from 'src/environments/environment'
 export class RetrieverService {
 
   uri: string = `${environment.apiUrl}/users/${environment.username}`
+  headers: HttpHeaders = new HttpHeaders
 
   constructor(private httpClient: HttpClient) { }
 
