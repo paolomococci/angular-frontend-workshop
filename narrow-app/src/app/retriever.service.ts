@@ -30,9 +30,6 @@ export class RetrieverService {
     .set('username', environment.username)
     .set('token', environment.token)
 
-  // TODO
-  options: {} | undefined
-
   constructor(private httpClient: HttpClient) { }
 
   // method to getting data of user
