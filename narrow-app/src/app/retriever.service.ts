@@ -18,7 +18,8 @@ export class RetrieverService {
 
   // TODO
   params: HttpParams = new HttpParams()
-    .set('username', ``).set('token', ``)
+    .set('username', environment.username)
+    .set('token', ``)
 
   // TODO
   options: {} | undefined
