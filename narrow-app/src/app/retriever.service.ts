@@ -24,11 +24,7 @@ export class RetrieverService {
       }
     )
   }
-
-  // TODO
-  params: HttpParams = new HttpParams()
-    .set('username', environment.username)
-    .set('token', environment.token)
+  httpParams = {}
 
   constructor(private httpClient: HttpClient) { }
 
