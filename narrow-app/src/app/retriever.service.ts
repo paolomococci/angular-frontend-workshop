@@ -10,12 +10,14 @@ import { environment } from 'src/environments/environment'
 })
 export class RetrieverService {
 
+  uri: string = `${environment.apiUrl}/users/${environment.username}`
+
   constructor(private httpClient: HttpClient) { }
 
   // method to getting data of user
   getUser(): Observable<User> {
     return this.httpClient.get<User>(
-      `${environment.apiUrl}/users/${environment.username}`
+      this.uri
     )
   }
 }
