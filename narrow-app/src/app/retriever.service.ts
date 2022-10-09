@@ -13,8 +13,13 @@ export class RetrieverService {
   uri: string = `${environment.apiUrl}/users/${environment.username}`
 
   // TODO
-  headers: HttpHeaders = new HttpHeaders()
-    .set('', ``)
+  httpHeader = {
+    headers: new HttpHeaders(
+      {
+        'Content-Type': 'application/json'
+      }
+    )
+  }
 
   // TODO
   params: HttpParams = new HttpParams()
