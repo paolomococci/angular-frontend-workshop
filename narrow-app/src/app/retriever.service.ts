@@ -13,12 +13,12 @@ export class RetrieverService {
   uri: string = `${environment.apiUrl}/users/${environment.username}`
 
   // TODO
-  params: HttpParams = new HttpParams()
-    .set('', ``).set('', ``)
-
-  // TODO
   headers: HttpHeaders = new HttpHeaders()
     .set('', ``)
+
+  // TODO
+  params: HttpParams = new HttpParams()
+    .set('', ``).set('', ``)
 
   // TODO
   options: {} | undefined
