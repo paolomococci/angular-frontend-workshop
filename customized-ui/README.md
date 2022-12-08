@@ -1,5 +1,7 @@
 # CustomizedUi
 
+Angular 15.0.3
+
 ## scaffolding
 
 ```shell
