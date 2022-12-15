@@ -1,6 +1,6 @@
 # CrudApp
 
-Application developed thanks to the Angular 15.0.3
+Application developed thanks to the Angular 15.0.4
 
 ## scaffolding
 
