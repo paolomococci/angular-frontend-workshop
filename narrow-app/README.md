@@ -1,6 +1,6 @@
 # NarrowApp
 
-Angular 15.1.3
+Angular 15.1.4
 
 An example of a web application of type SSR, (Server-Side Rendering).
 
