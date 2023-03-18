@@ -1,6 +1,6 @@
 # OpenSeeGet (WYSIWYG application)
 
-Angular 15.2.1
+Angular 15.2.2
 
 ## scaffolding
 
