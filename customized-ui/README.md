@@ -1,6 +1,6 @@
 # CustomizedUi
 
-Angular 15.2.4
+Angular 15.2.5
 
 ## scaffolding
 
